@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import TestDB from './db/test_db';
 
 ReactDOM.render(
-  <App />,
+  <TestDB />,
   document.getElementById('root')
 );
