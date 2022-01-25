@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestDB from './db/test_db';
+import Homepage from './Pages/landing-page';
 
 ReactDOM.render(
-  <TestDB />,
+  <Homepage />,
   document.getElementById('root')
 );
