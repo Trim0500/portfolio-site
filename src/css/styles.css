@@ -1,5 +1,5 @@
 body {
-    background-color: #26003f;
+    background-color: #26003f !important;
 }
 h1 {
     color: #0d4600;
@@ -9,6 +9,6 @@ p {
     color: #0d4600;
 }
 a {
-    color: #1400a5;
-    text-decoration: none;
+    color: #1400a5 !important;
+    text-decoration: none !important;
 }
