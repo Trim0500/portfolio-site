@@ -6,6 +6,7 @@ export default function TestDB() {
     const fileByteArray = [];
 
     const [ImageTitle, setImageTitle] = useState('');
+    // eslint-disable-next-line
     const [ImageContent, setImageContent] = useState(null);
     const fileInput = React.createRef();
 
