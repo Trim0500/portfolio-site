@@ -59,24 +59,24 @@ export default class Homepage extends React.Component {
 
     render() {
         return(
-            <Container name="Content">
+            <Container name="Content" fluid>
                 <Row name="Image_Div">
-                    <Col sm={4} name="PFP_Div"><img name="PFP" src={this.state.Me} alt="PFP by Fireplace" width="425px" height="425px" /></Col>
+                    <Col sm={4} name="PFP_Div"><img name="PFP" src={this.state.Me} alt="PFP by Fireplace" width="550px" height="550px" /></Col>
                     <Col sm={8} name="Header_Div">
                         <h1>Welcome to Trim's Space!</h1>
                         <p>{process.env.REACT_APP_LANDING_PAGE_INTRO}</p>
                         <Row>
-                            <Col>
+                            <Col sm>
                                 <img name="Hobbies_Img" src={this.state.Echoes_Vid_Tumbnail} alt="Hobbies Thumbnail" width="266px" height="200px" />
                             </Col>
-                            <Col>
+                            <Col sm>
                                 <img name="Academics_Img" src={this.state.School_Logo} alt="Academics Thumbnail" width="200px" height="200px" />
                             </Col>
-                            <Col>
+                            <Col sm>
                                 <img name="Contact_Img" src={this.state.Socials} alt="Contacts Thumbnail" width="200px" height="200px" />
                             </Col>
                         </Row>
-                        <Row>
+                        <Row className='justify-content-center'>
                             <Col>
                                 <a name="Hobbies_Link" href='/'>Let me Tell you About What I Like!</a>
                             </Col>
