@@ -24,7 +24,6 @@ export default function TestDB() {
     }
 
     const handleImageUpload = (e) => {
-        /* setImageContent(e.target.files[0]); */
         e.preventDefault();
 
         reader.readAsArrayBuffer(e.target.files[0]);
@@ -47,14 +46,6 @@ export default function TestDB() {
     }
 
     const handleUpload = () => {
-        /* let file = ImageContent;
-
-        var dataPayload = new FormData();
-        dataPayload.append("ImageTitle", ImageTitle);
-        dataPayload.append("ImageContent", file, file.name);
-
-        console.log(dataPayload) */
-
         let data = {
             ImageTitle: ImageTitle,
             ImageContent: fileByteArray
@@ -62,7 +53,7 @@ export default function TestDB() {
 
         client.query(
             q.Create(
-                q.Collection('test'),
+                q.Collection('portfolio_images'),
                 {data: data}
             )
         )
@@ -79,18 +70,6 @@ export default function TestDB() {
         setImageContent(null);
     }
 
-    /* var CreateP = client.query(
-        q.Create(
-            q.Collection('test'),
-            {data: {testField: 'testValue'}}
-        )
-    )
-
-    CreateP.then(function(response) {
-        console.log(response.ref);
-    })
-        .catch((err) => console.error(err)); */
-
     return(
         <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -103,6 +82,7 @@ export default function TestDB() {
             </div>
             <button type="submit" className="btn btn-primary">Upload</button>
             <button type="button" className="btn btn-primary" name="reset-btn" onClick={resetAttachments}>Reset Attachments</button>
+            <a href='/Lafleur_CV.pdf' download>Click to Download CV</a>
         </form>
     )
 }
