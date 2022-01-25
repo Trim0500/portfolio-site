@@ -6,11 +6,13 @@ export default class Homepage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            PFPImage: null,
-            HobbiesImage: '',
-            AcademicsImage: '',
-            ContactImage: ''
+            ImageList: [],
+            Me: null,
+            Echoes_Vid_Tumbnail: null,
+            School_Logo: null,
+            Socials: null
         }
+        this.HandleImages = this.HandleImages.bind(this);
         require('dotenv').config();
     }
     
@@ -25,43 +27,53 @@ export default class Homepage extends React.Component {
             scheme: 'https',
         })
 
-        client.query(
-            q.Get(q.Ref(q.Collection('portfolio_images'), '321530096090350159'))
-        )
-        .then((res) => {
-            const file = res.data.ImageContent;
-            console.log(file);
+        client.query([
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321530096090350159')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321791953526063695')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321792128831193679')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321792680777482831')),
+        ])
+        .then((data) => this.HandleImages(data))
+        .catch((err) => console.error(err))
+    }
+
+    HandleImages(data) {
+        this.setState({
+            ImageList: data
+        })
+
+        this.state.ImageList.forEach(element => {
+            let name = element.data.ImageTitle;
+
+            const file = element.data.ImageContent;
             const content = new Uint8Array(file);
-            console.log(content);
             const objectUrl = URL.createObjectURL(
                 new Blob([content.buffer], { type: 'image/png' })
             );
-            console.log(objectUrl);
 
             this.setState({
-                PFPImage: objectUrl
+                [name]: objectUrl
             })
-        })
-        .catch((err) => console.error(err))
+        });
     }
 
     render() {
         return(
             <Container name="Content">
                 <Row name="Image_Div">
-                    <Col sm={4} name="PFP_Div"><img name="PFP" src={this.state.PFPImage} alt="PFP by Fireplace" width="425px" height="425px" /></Col>
+                    <Col sm={4} name="PFP_Div"><img name="PFP" src={this.state.Me} alt="PFP by Fireplace" width="425px" height="425px" /></Col>
                     <Col sm={8} name="Header_Div">
                         <h1>Welcome to Trim's Space!</h1>
                         <p>{process.env.REACT_APP_LANDING_PAGE_INTRO}</p>
                         <Row>
                             <Col>
-                                <img name="Hobbies_Img" src={this.HobbiesImage} alt="Hobbies Thumbnail" width="350px" height="350px" />
+                                <img name="Hobbies_Img" src={this.state.Echoes_Vid_Tumbnail} alt="Hobbies Thumbnail" width="266px" height="200px" />
                             </Col>
                             <Col>
-                                <img name="Academics_Img" src={this.AcademicsImage} alt="Academics Thumbnail" width="350px" height="350px" />
+                                <img name="Academics_Img" src={this.state.School_Logo} alt="Academics Thumbnail" width="200px" height="200px" />
                             </Col>
                             <Col>
-                                <img name="Contact_Img" src={this.ContactImage} alt="Contacts Thumbnail" width="350px" height="350px" />
+                                <img name="Contact_Img" src={this.state.Socials} alt="Contacts Thumbnail" width="200px" height="200px" />
                             </Col>
                         </Row>
                         <Row>
