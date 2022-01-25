@@ -6,18 +6,50 @@ export default class Homepage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            PFPImage: '',
+            PFPImage: null,
             HobbiesImage: '',
             AcademicsImage: '',
             ContactImage: ''
         }
+        require('dotenv').config();
+    }
+    
+    componentDidMount() {
+        var faunadb = require('faunadb'),
+        q = faunadb.query
+
+        var client = new faunadb.Client({
+            secret: process.env.REACT_APP_FAUNA_ADMIN_KEY,
+            domain: 'db.fauna.com',
+            port: 443,
+            scheme: 'https',
+        })
+
+        client.query(
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321530096090350159'))
+        )
+        .then((res) => {
+            const file = res.data.ImageContent;
+            console.log(file);
+            const content = new Uint8Array(file);
+            console.log(content);
+            const objectUrl = URL.createObjectURL(
+                new Blob([content.buffer], { type: 'image/png' })
+            );
+            console.log(objectUrl);
+
+            this.setState({
+                PFPImage: objectUrl
+            })
+        })
+        .catch((err) => console.error(err))
     }
 
     render() {
         return(
             <Container name="Content">
                 <Row name="Image_Div">
-                    <Col sm={4} name="PFP_Div"><img name="PFP" src={this.PFPImage} alt="PFP by Fireplace" width="631px" height="631" /></Col>
+                    <Col sm={4} name="PFP_Div"><img name="PFP" src={this.state.PFPImage} alt="PFP by Fireplace" width="425px" height="425px" /></Col>
                     <Col sm={8} name="Header_Div">
                         <h1>Welcome to Trim's Space!</h1>
                         <p>{process.env.REACT_APP_LANDING_PAGE_INTRO}</p>
