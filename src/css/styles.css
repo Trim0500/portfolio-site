@@ -25,9 +25,16 @@ a {
 .container-content {
     background: rgba(20, 0, 165, .25) !important;
     border: 2px solid #0d4600 !important;
+    padding-bottom: 1em !important;
 }
 .btn.btn-primary {
     background-color: #0d4600 !important;
     border-color: #0d4600 !important;
     padding: 1.75rem 3.00rem !important;
+    color: gray !important;
+}
+.form-control {
+    background: rgba(48, 48, 48, 0.5) !important;
+    border: 1px solid rgba(48, 48, 48, 0.5) !important;
+    color: gray !important;
 }

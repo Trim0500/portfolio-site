@@ -28,7 +28,7 @@ export default class ContactPage extends React.Component {
             <Container>
                 <NavBar />
                 <Container className='container-content'>
-                    <h1>Let's Get in Touch!</h1>
+                    <h1 style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>Let's Get in Touch!</h1>
                     <Row>
                         <Col>
                             <form ref={this.form} onSubmit={this.HandleSubmit}>
