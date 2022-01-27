@@ -13,3 +13,11 @@ a {
     text-decoration: none !important;
     text-align: center !important;
 }
+.nav {
+    background-color: red !important;
+    opacity: 30%;
+    border-color: #0d4600;
+}
+.nav-item {
+    opacity: 100%;
+}

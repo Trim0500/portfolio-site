@@ -1,11 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import '../css/styles.css'
-import AcademicsPage from './academics-page';
-import ContactPage from './contact-page';
-import HobbiesPage from './hobbies-page';
-import ProfessionalPage from './professional-page';
 
 export default class Homepage extends React.Component {
     constructor(props) {
@@ -65,14 +60,6 @@ export default class Homepage extends React.Component {
     render() {
         return(
             <Container name="Content" fluid>
-                <Router>
-                    <Routes>
-                        <Route path="/hobbies" element={<HobbiesPage />} />
-                        <Route path="/academics" element={<AcademicsPage />} />
-                        <Route path="/professional" element={<ProfessionalPage />} />
-                        <Route path="/contact" element={<ContactPage />} />
-                    </Routes>
-                </Router>
                 <Row name="Image_Div">
                     <Col sm={4} name="PFP_Div"><img name="PFP" src={this.state.Me} alt="PFP by Fireplace" width="550px" height="550px" /></Col>
                     <Col sm={8} name="Header_Div">

@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Homepage from './Pages/landing-page';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import UseRouter from './Fragment/router';
 
 ReactDOM.render(
-  <Homepage />,
+  <UseRouter />,
   document.getElementById('root')
 );
