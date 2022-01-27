@@ -14,7 +14,7 @@ export default class ContactPage extends React.Component {
     HandleSubmit(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_ttaz1gh', 'template_3nfgg25', this.form.current)
+        emailjs.sendForm('service_ttaz1gh', 'template_3nfgg25', this.form.current, process.env.REACT_APP_EMAIL_USER_ID)
         .then((res) => {
             console.log('Success!', res.status, res.text);
         })
