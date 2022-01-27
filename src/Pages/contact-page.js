@@ -35,7 +35,7 @@ export default class ContactPage extends React.Component {
                                 <input placeholder='Enter your name here...' className='form-control' type="text" name="from_name" /><br/>
                                 <input placeholder='Enter your email here...' className='form-control' type="email" name="reply_to" /><br/>
                                 <textarea placeholder='What are you writing for?' className='form-control' name="message" rows="15" /><br/>
-                                <input className="btn btn-primary" type="submit" value="Send" />
+                                <input className="btn btn-primary" type="submit" value="Submit Form" />
                             </form>
                         </Col>
                         <Col>
