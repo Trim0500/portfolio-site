@@ -14,10 +14,12 @@ a {
     text-align: center !important;
 }
 .nav {
-    background-color: red !important;
-    opacity: 30%;
+    background: rgba(255, 0, 0, 0.3) !important;
     border-color: #0d4600;
 }
 .nav-item {
     opacity: 100%;
+}
+.container-content {
+    background: rgba(20, 0, 165, .25) !important;
 }
