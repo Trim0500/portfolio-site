@@ -1,6 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import '../css/styles.css'
+import AcademicsPage from './academics-page';
+import ContactPage from './contact-page';
+import HobbiesPage from './hobbies-page';
+import ProfessionalPage from './professional-page';
 
 export default class Homepage extends React.Component {
     constructor(props) {
@@ -60,6 +65,14 @@ export default class Homepage extends React.Component {
     render() {
         return(
             <Container name="Content" fluid>
+                <Router>
+                    <Routes>
+                        <Route path="/hobbies" element={<HobbiesPage />} />
+                        <Route path="/academics" element={<AcademicsPage />} />
+                        <Route path="/professional" element={<ProfessionalPage />} />
+                        <Route path="/contact" element={<ContactPage />} />
+                    </Routes>
+                </Router>
                 <Row name="Image_Div">
                     <Col sm={4} name="PFP_Div"><img name="PFP" src={this.state.Me} alt="PFP by Fireplace" width="550px" height="550px" /></Col>
                     <Col sm={8} name="Header_Div">
@@ -78,13 +91,13 @@ export default class Homepage extends React.Component {
                         </Row>
                         <Row className='justify-content-center'>
                             <Col>
-                                <a name="Hobbies_Link" href='/'>Let me Tell you About What I Like!</a>
+                                <a name="Hobbies_Link" href='/hobbies'>Let me Tell you About What I Like!</a>
                             </Col>
                             <Col>
-                                <a name="Academics_Link" href='/'>Check Out What I've Learned!</a>
+                                <a name="Academics_Link" href='/academics'>Check Out What I've Learned!</a>
                             </Col>
                             <Col>
-                                <a name="Contact_Link" href='/'>Let's Get in Touch!</a>
+                                <a name="Contact_Link" href='/contact'>Let's Get in Touch!</a>
                             </Col>
                         </Row>
                     </Col>
