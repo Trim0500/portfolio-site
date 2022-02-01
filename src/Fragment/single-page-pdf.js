@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Document, Page } from "react-pdf";
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 export default function SinglePage(props) {
     const [numPages, setNumPages] = useState(null);
@@ -26,7 +26,7 @@ export default function SinglePage(props) {
 
     return(
         <>
-            <Document file={pdf} /* options={{workerSrc: "/pdf.worker.js"}} */ onLoadSuccess={onDocumentLoad}>
+            <Document file={pdf} options={{workerSrc: "/pdf.worker.js"}} onLoadSuccess={onDocumentLoad}>
                 <Page pageNumber={pageNumber} />
             </Document>
             <div>

@@ -5,7 +5,6 @@ import SinglePage from '../Fragment/single-page-pdf';
 
 export default class ProfessionalPage extends React.Component {
     render() {
-        console.log(process.env.PUBLIC_URL + '/Lafleur_CV.pdf');
         return (
             <Container>
                 <NavBar />
