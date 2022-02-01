@@ -29,10 +29,11 @@ export default function SinglePage(props) {
             <Document file={pdf} options={{workerSrc: "/pdf.worker.js"}} onLoadSuccess={onDocumentLoad}>
                 <Page pageNumber={pageNumber} />
             </Document>
-            <div>
+            <div className="center">
                 <p>Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}</p>
-                <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>Previous Page</button>
-                <button type="button" disabled={pageNumber >= numPages} onClick={nextPage}>Next Page</button>
+                <button className="btn btn-primary-pdf" type="button" disabled={pageNumber <= 1} onClick={previousPage}>Previous Page</button>
+                <button className="btn btn-primary-pdf" type="button" disabled={pageNumber >= numPages} onClick={nextPage}>Next Page</button>
+                <a className="a-pdf-download" href="/Lafleur_CV.pdf" download>Download CV</a>
             </div>
         </>
     )
