@@ -26,7 +26,7 @@ export default function SinglePage(props) {
 
     return(
         <>
-            <Document file={pdf} options={{workerSrc: "/pdf.worker.js"}} onLoadSuccess={onDocumentLoad}>
+            <Document file={pdf} /* options={{workerSrc: "/pdf.worker.js"}} */ onLoadSuccess={onDocumentLoad}>
                 <Page pageNumber={pageNumber} />
             </Document>
             <div>
