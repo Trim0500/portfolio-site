@@ -10,10 +10,16 @@ p {
     color: #0d4600;
 }
 a {
-    color: #1400a5 !important;
+    color: #000060 !important;
     text-decoration: none !important;
     text-align: center !important;
     font-size: x-large !important;
+}
+.a-pdf-download {
+    color: #002ca5 !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    font-size: medium !important;
 }
 .nav {
     background: rgba(255, 0, 0, 0.3) !important;
@@ -33,8 +39,19 @@ a {
     padding: 1.75rem 3.00rem !important;
     color: gray !important;
 }
+.btn.btn-primary-pdf {
+    background-color: #0d4600 !important;
+    border-color: #0d4600 !important;
+    color: gray !important;
+}
 .form-control {
     background: rgba(48, 48, 48, 0.5) !important;
     border: 1px solid rgba(48, 48, 48, 0.5) !important;
     color: gray !important;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
 }
