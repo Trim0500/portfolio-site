@@ -19,6 +19,12 @@ a {
     text-align: center !important;
     font-size: x-large !important;
 }
+.p-contact-link {
+    color: #002ca5 !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    font-size: large !important;
+}
 .a-pdf-download {
     color: #002ca5 !important;
     text-decoration: none !important;
