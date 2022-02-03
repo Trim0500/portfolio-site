@@ -70,3 +70,7 @@ iframe {
     padding: 10px;
     text-align: center;
 }
+.edits-imgs {
+    margin: 0.33em;
+    border: 2px solid #0d4600 !important;
+}

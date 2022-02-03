@@ -80,12 +80,12 @@ export default class HobbiesPage extends React.Component {
                         <Col sm={7}>
                             <Row>
                                 <Col>
-                                    <img name="Nutball_Img" src={this.state.Nutball} alt="Nutball meme" width="354px" height="266px" />
-                                    <img name="Nutball_Img" src={this.state.New_Mystery} alt="New Mystery meme" width="354px" height="266px" />
+                                    <img className='edits-imgs' name="Nutball_Img" src={this.state.Nutball} alt="Nutball meme" width="354px" height="266px" />
+                                    <img className='edits-imgs' name="Nutball_Img" src={this.state.New_Mystery} alt="New Mystery meme" width="354px" height="266px" />
                                 </Col>
                                 <Col>
-                                    <img name="FEH_Img" src={this.state.FEH} alt="FEH iPad background" width="354px" height="266px" />
-                                    <img name="Nutball_Img" src={this.state.Virgin} alt="Vergil Bloody Palace run" width="354px" height="198px" />
+                                    <img className='edits-imgs' name="FEH_Img" src={this.state.FEH} alt="FEH iPad background" width="354px" height="266px" />
+                                    <img className='edits-imgs' name="Nutball_Img" src={this.state.Virgin} alt="Vergil Bloody Palace run" width="354px" height="198px" />
                                 </Col>
                             </Row>
                             {/* <Row>
