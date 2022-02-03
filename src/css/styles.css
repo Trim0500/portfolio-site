@@ -74,3 +74,8 @@ iframe {
     margin: 0.33em;
     border: 2px solid #0d4600 !important;
 }
+.landscapes-imgs {
+    display: block;
+    margin: 0 auto 0 auto;
+    border: 2px solid #0d4600 !important;
+}

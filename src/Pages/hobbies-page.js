@@ -88,9 +88,6 @@ export default class HobbiesPage extends React.Component {
                                     <img className='edits-imgs' name="Nutball_Img" src={this.state.Virgin} alt="Vergil Bloody Palace run" width="354px" height="198px" />
                                 </Col>
                             </Row>
-                            {/* <Row>
-                                
-                            </Row> */}
                         </Col>
                     </Row>
                     <Row>
@@ -106,26 +103,26 @@ export default class HobbiesPage extends React.Component {
                         </Col>
                     </Row>
                     <Row>
-                        <h1>Landsacpes</h1>
+                        <h1>Landscapes</h1>
                         <p style={{textAlign: "center"}}>{process.env.REACT_APP_LANDSCAPES_TEXT}</p>
                     </Row>
                     <Row>
                         <Col>
-                            <h1>Image goes here</h1>
+                            <img className='landscapes-imgs' name="Gaspésie_Img" src={this.state.Gaspésie} alt="Gaspésie mountain river" width="577px" height="266px" />
                             <p style={{textAlign: "center"}}>Caption text</p>
                         </Col>
                         <Col>
-                            <h1>Image goes here</h1>
+                            <img className='landscapes-imgs' name="Winter_Img" src={this.state.Winter} alt="Winter farm field" width="577px" height="266px" />
                             <p style={{textAlign: "center"}}>Caption text</p>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                            <h1>Image goes here</h1>
+                            <img className='landscapes-imgs' name="Flower_Img" src={this.state.Flowers} alt="White flower close-up" />
                             <p style={{textAlign: "center"}}>Caption text</p>
                         </Col>
                         <Col>
-                            <h1>Image goes here</h1>
+                            <img className='landscapes-imgs' name="Horizon_Img" src={this.state.Horizon} alt="Gaspésie horizon selfie" />
                             <p style={{textAlign: "center"}}>Caption text</p>
                         </Col>
                     </Row>
