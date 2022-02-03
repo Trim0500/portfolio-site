@@ -3,6 +3,68 @@ import NavBar from '../Fragment/navbar';
 import { Col, Container, Row } from 'react-bootstrap';
 
 export default class HobbiesPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            ImageList: [],
+            Nutball: null,
+            FEH: null,
+            New_Mystery: null,
+            Virgin: null,
+            Gaspésie: null,
+            Horizon: null,
+            Flowers: null,
+            Winter: null
+        }
+        this.HandleImages = this.HandleImages.bind(this);
+        require('dotenv').config();
+    }
+    
+    componentDidMount() {
+        var faunadb = require('faunadb'),
+        q = faunadb.query
+
+        var client = new faunadb.Client({
+            secret: process.env.REACT_APP_FAUNA_ADMIN_KEY,
+            domain: 'db.fauna.com',
+            port: 443,
+            scheme: 'https',
+        })
+
+        client.query([
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321706434962129487')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321707129411994191')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321707641024807503')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321707820239028815')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '322588422043599439')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '322588532856062543')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '322588697409094223')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '322588862648943183'))
+        ])
+        .then((data) => this.HandleImages(data))
+        .catch((err) => console.error(err))
+    }
+
+    HandleImages(data) {
+        this.setState({
+            ImageList: data
+        })
+
+        this.state.ImageList.forEach(element => {
+            let name = element.data.ImageTitle;
+
+            const file = element.data.ImageContent;
+            const content = new Uint8Array(file);
+            const objectUrl = URL.createObjectURL(
+                new Blob([content.buffer], { type: 'image/png' })
+            );
+
+            this.setState({
+                [name]: objectUrl
+            })
+        });
+    }
+
     render() {
         return (
             <Container>
