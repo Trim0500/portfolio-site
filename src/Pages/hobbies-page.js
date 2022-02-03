@@ -78,7 +78,19 @@ export default class HobbiesPage extends React.Component {
                             <p>{process.env.REACT_APP_EDITS_TEXT_2}</p>
                         </Col>
                         <Col sm={7}>
-                            <h1>Images will go here</h1>
+                            <Row>
+                                <Col>
+                                    <img name="Nutball_Img" src={this.state.Nutball} alt="Nutball meme" width="354px" height="266px" />
+                                    <img name="Nutball_Img" src={this.state.New_Mystery} alt="New Mystery meme" width="354px" height="266px" />
+                                </Col>
+                                <Col>
+                                    <img name="FEH_Img" src={this.state.FEH} alt="FEH iPad background" width="354px" height="266px" />
+                                    <img name="Nutball_Img" src={this.state.Virgin} alt="Vergil Bloody Palace run" width="354px" height="198px" />
+                                </Col>
+                            </Row>
+                            {/* <Row>
+                                
+                            </Row> */}
                         </Col>
                     </Row>
                     <Row>
