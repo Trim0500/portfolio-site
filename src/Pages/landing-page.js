@@ -78,13 +78,13 @@ export default class Homepage extends React.Component {
                         </Row>
                         <Row className='justify-content-center'>
                             <Col>
-                                <a name="Hobbies_Link" href='/hobbies'>Let me Tell you About What I Like!</a>
+                                <a className="a-pdf-download" name="Hobbies_Link" href='/hobbies'>Let me Tell you About What I Like!</a>
                             </Col>
                             <Col>
-                                <a name="Academics_Link" href='/academics'>Check Out What I've Learned!</a>
+                                <a className="a-pdf-download" name="Academics_Link" href='/academics'>Check Out What I've Learned!</a>
                             </Col>
                             <Col>
-                                <a name="Contact_Link" href='/contact'>Let's Get in Touch!</a>
+                                <a className="a-pdf-download" name="Contact_Link" href='/contact'>Let's Get in Touch!</a>
                             </Col>
                         </Row>
                     </Col>

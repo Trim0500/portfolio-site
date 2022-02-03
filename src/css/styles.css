@@ -6,14 +6,29 @@ h1 {
     text-align: center;
     font-style: italic;
 }
+h3 {
+    color: #0d4600;
+}
 p {
     color: #0d4600;
+    font-size: larger !important;
 }
 a {
     color: #000060 !important;
     text-decoration: none !important;
     text-align: center !important;
     font-size: x-large !important;
+}
+iframe {
+    display: block;
+    margin: 0 auto 1em auto;
+    border: 2px solid #0d4600 !important;
+}
+.p-contact-link {
+    color: #002ca5 !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    font-size: large !important;
 }
 .a-pdf-download {
     color: #002ca5 !important;
@@ -54,4 +69,14 @@ a {
     width: 50%;
     padding: 10px;
     text-align: center;
+}
+.edits-imgs {
+    display: block;
+    margin: 0 auto 0 auto;
+    border: 2px solid #0d4600 !important;
+}
+.landscapes-imgs {
+    display: block;
+    margin: 0 auto 0 auto;
+    border: 2px solid #0d4600 !important;
 }
