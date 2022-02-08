@@ -8,6 +8,10 @@ export default class AcademicsPage extends React.Component {
         this.state = {
             ImageList: [],
             School_Logo: null,
+            Unity: null,
+            MS_NET: null,
+            Arduino: null,
+            Club_Logo: null
         }
         this.showProjectsHeaders = this.showProjectsHeaders.bind(this);
         this.showProjectText = this.showProjectText.bind(this);
@@ -26,6 +30,10 @@ export default class AcademicsPage extends React.Component {
 
         client.query([
             q.Get(q.Ref(q.Collection('portfolio_images'), '321792128831193679')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323060486570508879')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323061103356543567')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323060819292062287')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323061495976952399')),
         ])
         .then((data) => this.HandleImages(data))
         .catch((err) => console.error(err))
@@ -131,6 +139,9 @@ export default class AcademicsPage extends React.Component {
                                                         UI, crafting design documents for screens and using tile maps to make them, leading a development team and my favorite; camera control! 
                                                     </p>
                                                     <Row>
+                                                        <Col>
+                                                            <img className='academics-imgs' name="Unity_Img" src={this.state.Unity} alt="Unity logo" width="354px" height="200px" />
+                                                        </Col>
                                                         <Col>
                                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/rE40K9uZmPA?controls=0&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                         </Col>
