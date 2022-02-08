@@ -9,6 +9,15 @@ h1 {
 h3 {
     color: #0d4600;
 }
+h4 {
+    color: #0d4600;
+}
+h4:hover {
+    color: #4bb932;
+}
+h4:active {
+    color: #0f3108;
+}
 p {
     color: #0d4600;
     font-size: larger !important;
