@@ -5,8 +5,50 @@ import NavBar from '../Fragment/navbar';
 export default class AcademicsPage extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            ImageList: [],
+            School_Logo: null
+        }
         this.showProjectsHeaders = this.showProjectsHeaders.bind(this);
         this.showProjectText = this.showProjectText.bind(this);
+    }
+
+    componentDidMount() {
+        var faunadb = require('faunadb'),
+        q = faunadb.query
+
+        var client = new faunadb.Client({
+            secret: process.env.REACT_APP_FAUNA_ADMIN_KEY,
+            domain: 'db.fauna.com',
+            port: 443,
+            scheme: 'https',
+        })
+
+        client.query([
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321792128831193679'))
+        ])
+        .then((data) => this.HandleImages(data))
+        .catch((err) => console.error(err))
+    }
+
+    HandleImages(data) {
+        this.setState({
+            ImageList: data
+        })
+
+        this.state.ImageList.forEach(element => {
+            let name = element.data.ImageTitle;
+
+            const file = element.data.ImageContent;
+            const content = new Uint8Array(file);
+            const objectUrl = URL.createObjectURL(
+                new Blob([content.buffer], { type: 'image/png' })
+            );
+
+            this.setState({
+                [name]: objectUrl
+            })
+        });
     }
 
     showProjectsHeaders(e) {
@@ -55,21 +97,28 @@ export default class AcademicsPage extends React.Component {
                     <h1 style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>My Academics</h1>
                     <Row>
                         <Col>
-                            <h3>Overview of Comp Sci @ Champlain</h3>
                             <Container>
-                                <p>
-                                    The highest level of education I have achieved thus far is a technical degree of collegial studies at Champlain College St. Lambert in Longueil Quebec.
-                                    It lasted about 3 years and covered a wide array of topics and fields in computer science.
-                                    From simple programming in Java to building entire web services, conducting system analysis, carrying out SCRUM projects and much, much more.
-                                    I’d like to think that from this part of my educational career, I really came into my own as a backend developer specializing in C#.
-                                </p>
+                                <Row>
+                                    <Col sm={9}>
+                                        <h3>Overview of Comp Sci @ Champlain</h3>
+                                        <p>
+                                            The highest level of education I have achieved thus far is a technical degree of collegial studies at Champlain College St. Lambert in Longueil Quebec.
+                                            It lasted about 3 years and covered a wide array of topics and fields in computer science.
+                                            From simple programming in Java to building entire web services, conducting system analysis, carrying out SCRUM projects and much, much more.
+                                            I’d like to think that from this part of my educational career, I really came into my own as a backend developer specializing in C#.
+                                        </p>
+                                    </Col>
+                                    <Col sm={3}>
+                                        <img className='academics-imgs' name="School_Img" src={this.state.School_Logo} alt="Champlain College logo" width="275px" height="275px" />
+                                    </Col>
+                                </Row>
                             </Container>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <Container>
-                                <h4 id='projectsHeader' onClick={this.showProjectsHeaders}>Notable Projects</h4>
+                                <h4 style={{textAlign: 'center'}} id='projectsHeader' onClick={this.showProjectsHeaders}>Notable Projects</h4>
                                 <div id='projectsHeaders' style={{display: 'none'}}>
                                     <ul style={{listStyleType: 'none'}}>
                                         <li style={{padding: '0.5em 0 0.5em 0'}}>
@@ -81,6 +130,11 @@ export default class AcademicsPage extends React.Component {
                                                         From that course I gained a host of skills that I’ve been taking some time long after the class has concluded such as programming scene transitions,
                                                         UI, crafting design documents for screens and using tile maps to make them, leading a development team and my favorite; camera control! 
                                                     </p>
+                                                    <Row>
+                                                        <Col>
+                                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rE40K9uZmPA?controls=0&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                        </Col>
+                                                    </Row>
                                                     <p>
                                                         The game premise is rather silly, you’re a lone person having infiltrated PETA HQ to stop a ridiculous PR campaign and now needs to escape.
                                                         But hey, I feel like it’s important to not take it too seriously and a simple premise is enough if the core game is good right?
@@ -116,6 +170,11 @@ export default class AcademicsPage extends React.Component {
                                                         This was the course project I had to make w/2 other students in our .NET class.
                                                         The objective was to create a console app that allows a user to manage their contacts stored on a database using WPF. 
                                                     </p>
+                                                    <Row>
+                                                        <Col>
+                                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RerorDIrMDE?controls=0&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                        </Col>
+                                                    </Row>
                                                     <p>
                                                         I thought this was a fun project to take on considering that I really enjoyed making C# &amp; WPF apps in .NET. I would say that this project is what sold me on .NET development by the end of it.
                                                         It allows for full CRUD operations on the contacts, importing and exporting the contacts into csv files, connecting to SQL Server instance, filtering the contacts and has a user-friendly interface to boot!
@@ -134,6 +193,11 @@ export default class AcademicsPage extends React.Component {
                                                         The IoT course was nothing short of a nice change of pace from the rest of the courses in the program as it was a fun bout of creative engineering for sure!
                                                         One of my favorite labs to have come out of that course was a small ultrasound device that would detect your relative distance to it and use an RGB LED to signal if you were close to it or far!
                                                     </p>
+                                                    <Row>
+                                                        <Col>
+                                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/P9NM07GIJt8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                        </Col>
+                                                    </Row>
                                                     <p>
                                                         This was a lab where I was free to experiment on whatever I wanted so long as I was using an input device with some output.
                                                         By the lab’s completion I was giddy to show people what I had built and felt very proud of it despite it’s relative simplicity!

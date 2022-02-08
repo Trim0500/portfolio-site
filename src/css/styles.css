@@ -10,10 +10,10 @@ h3 {
     color: #0d4600;
 }
 h4 {
-    color: #0d4600;
+    color: #4bb932;
 }
 h4:hover {
-    color: #4bb932;
+    color: #0d4600;
 }
 h4:active {
     color: #0f3108;
@@ -87,5 +87,8 @@ iframe {
 .landscapes-imgs {
     display: block;
     margin: 0 auto 0 auto;
+    border: 2px solid #0d4600 !important;
+}
+.academics-imgs {
     border: 2px solid #0d4600 !important;
 }
