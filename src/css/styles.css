@@ -14,9 +14,11 @@ h4 {
 }
 h4:hover {
     color: #0d4600;
+    cursor: pointer;
 }
 h4:active {
     color: #0f3108;
+    cursor: pointer;
 }
 p {
     color: #0d4600;
