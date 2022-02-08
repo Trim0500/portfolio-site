@@ -2,15 +2,23 @@ body {
     background-color: #26003f !important;
 }
 h1 {
-    color: #0d4600;
+    color: #167900;
     text-align: center;
     font-style: italic;
+    font-weight: bold;
+    font-family: 'Gadugi';
 }
 h3 {
-    color: #0d4600;
+    color: #167900;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Gadugi';
 }
 h4 {
     color: #4bb932;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Gadugi';
 }
 h4:hover {
     color: #0d4600;
@@ -23,12 +31,16 @@ h4:active {
 p {
     color: #0d4600;
     font-size: larger !important;
+    font-weight: bold;
+    font-family: 'Gadugi';
 }
 a {
     color: #000060 !important;
     text-decoration: none !important;
     text-align: center !important;
     font-size: x-large !important;
+    font-weight: bold;
+    font-family: 'Gadugi';
 }
 iframe {
     display: block;
@@ -40,6 +52,8 @@ iframe {
     text-decoration: none !important;
     text-align: center !important;
     font-size: large !important;
+    font-weight: bold;
+    font-family: 'Gadugi';
 }
 .a-pdf-download {
     color: #002ca5 !important;
