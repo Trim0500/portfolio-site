@@ -140,7 +140,7 @@ export default class AcademicsPage extends React.Component {
                                                     </p>
                                                     <Row>
                                                         <Col>
-                                                            <img className='academics-imgs' name="Unity_Img" src={this.state.Unity} alt="Unity logo" width="354px" height="200px" />
+                                                            <img className='academics-imgs' name="Unity_Img" src={this.state.Unity} alt="Unity logo" width="531px" height="300px" />
                                                         </Col>
                                                         <Col>
                                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/rE40K9uZmPA?controls=0&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -183,6 +183,9 @@ export default class AcademicsPage extends React.Component {
                                                     </p>
                                                     <Row>
                                                         <Col>
+                                                            <img className='academics-imgs' name=".NET_Img" src={this.state.MS_NET} alt=".NET logo" width="500px" height="315px" />
+                                                        </Col>
+                                                        <Col>
                                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/RerorDIrMDE?controls=0&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                         </Col>
                                                     </Row>
@@ -205,6 +208,9 @@ export default class AcademicsPage extends React.Component {
                                                         One of my favorite labs to have come out of that course was a small ultrasound device that would detect your relative distance to it and use an RGB LED to signal if you were close to it or far!
                                                     </p>
                                                     <Row>
+                                                        <Col>
+                                                            <img className='academics-imgs' name="Arduino_Img" src={this.state.Arduino} alt="Arduino logo" width="419px" height="315px" />
+                                                        </Col>
                                                         <Col>
                                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/P9NM07GIJt8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                         </Col>
@@ -238,6 +244,9 @@ export default class AcademicsPage extends React.Component {
                                     To that end I organized several events and fundraisers, maintained a public Discord and stayed in the good graces of our student association and administrative body!
                                 </p>
                                 <Row>
+                                    <Col>
+                                        <img className='academics-imgs' name="Club_Img" src={this.state.Club_Logo} alt="Champlain Gaming Club logo" width="605px" height="315px" />
+                                    </Col>
                                     <Col>
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/syEeMusOnyg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </Col>
