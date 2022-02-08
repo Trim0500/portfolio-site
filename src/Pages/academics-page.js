@@ -7,7 +7,7 @@ export default class AcademicsPage extends React.Component {
         super(props);
         this.state = {
             ImageList: [],
-            School_Logo: null
+            School_Logo: null,
         }
         this.showProjectsHeaders = this.showProjectsHeaders.bind(this);
         this.showProjectText = this.showProjectText.bind(this);
@@ -25,7 +25,7 @@ export default class AcademicsPage extends React.Component {
         })
 
         client.query([
-            q.Get(q.Ref(q.Collection('portfolio_images'), '321792128831193679'))
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321792128831193679')),
         ])
         .then((data) => this.HandleImages(data))
         .catch((err) => console.error(err))
@@ -226,6 +226,11 @@ export default class AcademicsPage extends React.Component {
                                     Our room was small but cozy and our numbers were large and passionate!
                                     To that end I organized several events and fundraisers, maintained a public Discord and stayed in the good graces of our student association and administrative body!
                                 </p>
+                                <Row>
+                                    <Col>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/syEeMusOnyg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </Col>
+                                </Row>
                             </Container>
                         </Col>
                     </Row>
