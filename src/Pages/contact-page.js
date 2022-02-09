@@ -57,6 +57,29 @@ export default class ContactPage extends React.Component {
 
             return;
         }
+        else if(this.recaptchaRef.current.getValue() === '') {
+            let msg_container = document.getElementById('notif_msg');
+
+            while(msg_container.firstChild) {
+                msg_container.removeChild(msg_container.firstChild)
+            }
+
+            let msg_tag = document.createElement('p');
+            let msg_content = document.createTextNode('Error, you need to verify you are indeed a human');
+            msg_tag.appendChild(msg_content);
+            msg_tag.style.color = '#FF0000';
+            msg_tag.style.textAlign = 'center';
+            msg_tag.id = 'error_msg';
+
+            msg_container.appendChild(msg_tag);
+
+            if(msg_container.style.display === 'none') {
+                msg_container.style.display = 'block';
+                msg_container.style.margin = 'auto';
+            }
+
+            return;
+        }
         else {
             try {
                 emailjs.sendForm('service_ttaz1gh', 'template_3nfgg25', this.form.current, process.env.REACT_APP_EMAIL_USER_ID)
