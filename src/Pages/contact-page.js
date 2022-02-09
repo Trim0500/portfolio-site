@@ -78,7 +78,7 @@ export default class ContactPage extends React.Component {
         }
         this.recaptchaRef.current.reset();
 
-        await fetch('https://calligraphy-recaptcha.vercel.app/api/recaptcha', {
+        await fetch('https://portfolio-recaptcha.vercel.app/api/recaptcha', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
