@@ -87,6 +87,26 @@ export default class ContactPage extends React.Component {
             }
             catch (error) {
                 console.error(error);
+
+                let msg_container = document.getElementById('notif_msg');
+
+                while(msg_container.firstChild) {
+                    msg_container.removeChild(msg_container.firstChild)
+                }
+
+                let msg_tag = document.createElement('p');
+                let msg_content = document.createTextNode('Error, something went wrong w/the email server, try again later. Sorry!');
+                msg_tag.appendChild(msg_content);
+                msg_tag.style.color = '#FF0000';
+                msg_tag.style.textAlign = 'center';
+                msg_tag.id = 'error_msg';
+
+                msg_container.appendChild(msg_tag);
+
+                if(msg_container.style.display === 'none') {
+                    msg_container.style.display = 'block';
+                    msg_container.style.margin = 'auto';
+                }
             }
         }
     }
