@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import NavBar from '../Fragment/navbar';
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default class ContactPage extends React.Component {
     constructor(props) {
@@ -13,6 +14,7 @@ export default class ContactPage extends React.Component {
             message: ''
         }
         this.form = React.createRef();
+        this.recaptchaRef = React.createRef();
         this.handleChange = this.handleChange.bind(this);
         this.HandleSubmit = this.HandleSubmit.bind(this);
     }
@@ -124,6 +126,7 @@ export default class ContactPage extends React.Component {
                                 <input placeholder='Enter your email here...' className='form-control' type="email" name="reply_to" value={this.state.reply_to} onChange={this.handleChange}/><br/>
                                 <textarea placeholder='What are you writing for?' className='form-control' name="message" rows="15" value={this.state.message} onChange={this.handleChange}/><br/>
                                 <input style={{display: 'block', margin: 'auto'}} className="btn btn-primary" type="submit" value="Submit Form" />
+                                <ReCAPTCHA ref={this.recaptchaRef} theme='dark' sitekey={!process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? process.env.REACT_APP_RECAPTCHA_SITE_KEY_LOCAL : process.env.REACT_APP_RECAPTCHA_SITE_KEY} />
                                 <div id='notif_msg' style={{display: 'none'}}></div>
                             </form>
                         </Col>
