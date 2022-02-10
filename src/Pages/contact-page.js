@@ -208,7 +208,22 @@ export default class ContactPage extends React.Component {
                             </form>
                         </Col>
                         <Col>
-                            <h1>Place location and socials links here</h1>
+                            <Row>
+                                <Col>
+                                    <img name="yt_img" src={this.state.YouTube} alt="YT Logo" className='contact-imgs' />
+                                </Col>
+                                <Col>
+                                    <img name="twitter_img" src={this.state.Twitter} alt="Twitter Logo" className='contact-imgs' />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <img name="github_img" src={this.state.GitHub} alt="GitHub Logo" className='contact-imgs' />
+                                </Col>
+                                <Col>
+                                    <img name="linkedin_img" src={this.state.LinkedIn} alt="LinkedIn Logo" className='contact-imgs' />
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Container>
