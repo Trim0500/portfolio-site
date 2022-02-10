@@ -211,17 +211,21 @@ export default class ContactPage extends React.Component {
                             <Row>
                                 <Col>
                                     <img name="yt_img" src={this.state.YouTube} alt="YT Logo" className='contact-imgs' width="200px" height="200px" />
+                                    <p style={{textAlign: 'center'}}>Watch my <a href='https://www.youtube.com/channel/UCaINTVin3xqRL_ODGmTxw6A' className='p-contact-link'>content!</a></p>
                                 </Col>
                                 <Col>
                                     <img name="twitter_img" src={this.state.Twitter} alt="Twitter Logo" className='contact-imgs' width="200px" height="200px" />
+                                    <p style={{textAlign: 'center'}}>You can <a href='https://twitter.com/TrimTheTrimaloo' className='p-contact-link'>interact</a> with me here!</p>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
                                     <img name="github_img" src={this.state.GitHub} alt="GitHub Logo" className='contact-imgs' width="200px" height="200px" />
+                                    <p style={{textAlign: 'center'}}>View my <a href='https://github.com/Trim0500' className='p-contact-link'>work and projects!</a></p>
                                 </Col>
                                 <Col>
                                     <img name="linkedin_img" src={this.state.LinkedIn} alt="LinkedIn Logo" className='contact-imgs' width="200px" height="200px" />
+                                    <p style={{textAlign: 'center'}}>This is my <a href='https://www.linkedin.com/in/tristanlafleur/' className='p-contact-link'>work experience!</a></p>
                                 </Col>
                             </Row>
                         </Col>
