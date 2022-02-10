@@ -112,5 +112,5 @@ iframe {
 }
 .contact-imgs {
     display: block;
-    margin: auto;
+    margin: 1em auto 1em auto;
 }

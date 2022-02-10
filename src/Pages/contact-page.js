@@ -210,18 +210,18 @@ export default class ContactPage extends React.Component {
                         <Col>
                             <Row>
                                 <Col>
-                                    <img name="yt_img" src={this.state.YouTube} alt="YT Logo" className='contact-imgs' />
+                                    <img name="yt_img" src={this.state.YouTube} alt="YT Logo" className='contact-imgs' width="200px" height="200px" />
                                 </Col>
                                 <Col>
-                                    <img name="twitter_img" src={this.state.Twitter} alt="Twitter Logo" className='contact-imgs' />
+                                    <img name="twitter_img" src={this.state.Twitter} alt="Twitter Logo" className='contact-imgs' width="200px" height="200px" />
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
-                                    <img name="github_img" src={this.state.GitHub} alt="GitHub Logo" className='contact-imgs' />
+                                    <img name="github_img" src={this.state.GitHub} alt="GitHub Logo" className='contact-imgs' width="200px" height="200px" />
                                 </Col>
                                 <Col>
-                                    <img name="linkedin_img" src={this.state.LinkedIn} alt="LinkedIn Logo" className='contact-imgs' />
+                                    <img name="linkedin_img" src={this.state.LinkedIn} alt="LinkedIn Logo" className='contact-imgs' width="200px" height="200px" />
                                 </Col>
                             </Row>
                         </Col>
