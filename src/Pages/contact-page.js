@@ -12,15 +12,61 @@ export default class ContactPage extends React.Component {
             from_name: '',
             reply_to: '',
             message: '',
-            recaptchaStatus: false
+            recaptchaStatus: false,
+            YouTube: null,
+            Twitter: null,
+            LinkedIn: null,
+            GitHub: null
         }
         this.form = React.createRef();
         this.recaptchaRef = React.createRef();
+        this.HandleImages = this.HandleImages.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.HandleSubmit = this.HandleSubmit.bind(this);
         this.handleEmailSubmission = this.handleEmailSubmission.bind(this);
         this.handleRecaptchaValidation = this.handleRecaptchaValidation.bind(this);
         this.handleNotifMessage = this.handleNotifMessage.bind(this);
+    }
+
+    componentDidMount() {
+        var faunadb = require('faunadb'),
+        q = faunadb.query
+
+        var client = new faunadb.Client({
+            secret: process.env.REACT_APP_FAUNA_ADMIN_KEY,
+            domain: 'db.fauna.com',
+            port: 443,
+            scheme: 'https',
+        })
+
+        client.query([
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323215794019238479')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323215820339544655')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323215865016222287')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323215886751105615'))
+        ])
+        .then((data) => this.HandleImages(data))
+        .catch((err) => console.error(err))
+    }
+
+    HandleImages(data) {
+        this.setState({
+            ImageList: data
+        })
+
+        this.state.ImageList.forEach(element => {
+            let name = element.data.ImageTitle;
+
+            const file = element.data.ImageContent;
+            const content = new Uint8Array(file);
+            const objectUrl = URL.createObjectURL(
+                new Blob([content.buffer], { type: 'image/png' })
+            );
+
+            this.setState({
+                [name]: objectUrl
+            })
+        });
     }
 
     handleChange(e) {
