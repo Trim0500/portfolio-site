@@ -13,6 +13,7 @@ export default class ContactPage extends React.Component {
             reply_to: '',
             message: '',
             recaptchaStatus: false,
+            ImageList: [],
             YouTube: null,
             Twitter: null,
             LinkedIn: null,
