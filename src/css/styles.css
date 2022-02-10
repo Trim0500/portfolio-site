@@ -46,6 +46,15 @@ a {
     text-shadow: 2px 2px black;
     font-family: 'Gadugi';
 }
+a:visited {
+    color: pink !important;
+}
+a:hover {
+    color: #00227e !important;
+}
+a:active {
+    color: #7e0000 !important;
+}
 iframe {
     display: block;
     margin: 0 auto 1em auto;
