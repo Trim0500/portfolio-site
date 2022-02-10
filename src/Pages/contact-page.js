@@ -12,15 +12,62 @@ export default class ContactPage extends React.Component {
             from_name: '',
             reply_to: '',
             message: '',
-            recaptchaStatus: false
+            recaptchaStatus: false,
+            ImageList: [],
+            YouTube: null,
+            Twitter: null,
+            LinkedIn: null,
+            GitHub: null
         }
         this.form = React.createRef();
         this.recaptchaRef = React.createRef();
+        this.HandleImages = this.HandleImages.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.HandleSubmit = this.HandleSubmit.bind(this);
         this.handleEmailSubmission = this.handleEmailSubmission.bind(this);
         this.handleRecaptchaValidation = this.handleRecaptchaValidation.bind(this);
         this.handleNotifMessage = this.handleNotifMessage.bind(this);
+    }
+
+    componentDidMount() {
+        var faunadb = require('faunadb'),
+        q = faunadb.query
+
+        var client = new faunadb.Client({
+            secret: process.env.REACT_APP_FAUNA_ADMIN_KEY,
+            domain: 'db.fauna.com',
+            port: 443,
+            scheme: 'https',
+        })
+
+        client.query([
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323215794019238479')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323215820339544655')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323215865016222287')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323215886751105615'))
+        ])
+        .then((data) => this.HandleImages(data))
+        .catch((err) => console.error(err))
+    }
+
+    HandleImages(data) {
+        this.setState({
+            ImageList: data
+        })
+
+        this.state.ImageList.forEach(element => {
+            let name = element.data.ImageTitle;
+
+            const file = element.data.ImageContent;
+            const content = new Uint8Array(file);
+            const objectUrl = URL.createObjectURL(
+                new Blob([content.buffer], { type: 'image/png' })
+            );
+
+            this.setState({
+                [name]: objectUrl
+            })
+        });
     }
 
     handleChange(e) {
@@ -162,7 +209,26 @@ export default class ContactPage extends React.Component {
                             </form>
                         </Col>
                         <Col>
-                            <h1>Place location and socials links here</h1>
+                            <Row>
+                                <Col>
+                                    <img name="yt_img" src={this.state.YouTube} alt="YT Logo" className='contact-imgs' width="200px" height="200px" />
+                                    <p style={{textAlign: 'center'}}>Watch my <a href='https://www.youtube.com/channel/UCaINTVin3xqRL_ODGmTxw6A' className='p-contact-link'>content!</a></p>
+                                </Col>
+                                <Col>
+                                    <img name="twitter_img" src={this.state.Twitter} alt="Twitter Logo" className='contact-imgs' width="200px" height="200px" />
+                                    <p style={{textAlign: 'center'}}>You can <a href='https://twitter.com/TrimTheTrimaloo' className='p-contact-link'>interact</a> with me here!</p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <img name="github_img" src={this.state.GitHub} alt="GitHub Logo" className='contact-imgs' width="200px" height="200px" />
+                                    <p style={{textAlign: 'center'}}>View my <a href='https://github.com/Trim0500' className='p-contact-link'>work and projects!</a></p>
+                                </Col>
+                                <Col>
+                                    <img name="linkedin_img" src={this.state.LinkedIn} alt="LinkedIn Logo" className='contact-imgs' width="200px" height="200px" />
+                                    <p style={{textAlign: 'center'}}>This is my <a href='https://www.linkedin.com/in/tristanlafleur/' className='p-contact-link'>work experience!</a></p>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Container>
