@@ -101,12 +101,12 @@ iframe {
     background-color: #0d4600 !important;
     border-color: #0d4600 !important;
     padding: 1.75rem 3.00rem !important;
-    color: gray !important;
+    color: lightgray !important;
 }
 .btn.btn-primary-pdf {
     background-color: #0d4600 !important;
     border-color: #0d4600 !important;
-    color: gray !important;
+    color: lightgray !important;
 }
 .form-control {
     background: #222 !important;
