@@ -75,6 +75,7 @@ iframe {
 .nav {
     background: rgba(177, 0, 0, 0.3) !important;
     border: 1px solid #0d4600 !important;
+    margin-top: 1em;
 }
 .nav-item {
     opacity: 100%;
@@ -88,6 +89,13 @@ iframe {
     background: rgba(20, 0, 165, .25) !important;
     border: 2px solid #0d4600 !important;
     padding-bottom: 1em !important;
+    margin-bottom: 1em;
+}
+.container-content-landing {
+    background: rgba(20, 0, 165, .25) !important;
+    border: 2px solid #0d4600 !important;
+    padding-bottom: 13% !important;
+    margin-bottom: 1em;
 }
 .btn.btn-primary {
     background-color: #0d4600 !important;
