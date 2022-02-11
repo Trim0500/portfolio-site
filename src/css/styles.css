@@ -79,6 +79,11 @@ iframe {
 .nav-item {
     opacity: 100%;
 }
+.container-fluid {
+    padding-right: var(--bs-gutter-x, 3rem);
+    padding-left: var(--bs-gutter-x, 3rem);
+    padding-top: 1em;
+}
 .container-content {
     background: rgba(20, 0, 165, .25) !important;
     border: 2px solid #0d4600 !important;
@@ -105,6 +110,10 @@ iframe {
     width: 50%;
     padding: 10px;
     text-align: center;
+}
+.landing-imgs {
+    display: block;
+    margin: 0 auto 0 auto;
 }
 .edits-imgs {
     display: block;

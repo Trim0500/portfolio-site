@@ -61,30 +61,30 @@ export default class Homepage extends React.Component {
         return(
             <Container name="Content" fluid>
                 <Row name="Image_Div">
-                    <Col sm={4} name="PFP_Div"><img name="PFP" src={this.state.Me} alt="PFP by Fireplace" width="550px" height="550px" /></Col>
-                    <Col sm={8} name="Header_Div">
+                    <Col sm={5} name="PFP_Div">
+                        <img name="PFP" src={this.state.Me} alt="PFP by Fireplace" width="550px" height="550px" className='landing-imgs' />
+                    </Col>
+                    <Col sm={7} name="Header_Div">
                         <h1>Welcome to Trim's Space!</h1>
                         <p>{process.env.REACT_APP_LANDING_PAGE_INTRO}</p>
                         <Row>
-                            <Col sm>
-                                <img name="Hobbies_Img" src={this.state.Echoes_Vid_Tumbnail} alt="Hobbies Thumbnail" width="266px" height="200px" />
-                            </Col>
-                            <Col sm>
-                                <img name="Academics_Img" src={this.state.School_Logo} alt="Academics Thumbnail" width="200px" height="200px" />
-                            </Col>
-                            <Col sm>
-                                <img name="Contact_Img" src={this.state.Socials} alt="Contacts Thumbnail" width="200px" height="200px" />
-                            </Col>
-                        </Row>
-                        <Row className='justify-content-center'>
                             <Col>
-                                <a className="a-pdf-download" name="Hobbies_Link" href='/hobbies'>Let me Tell you About What I Like!</a>
+                                <img name="Hobbies_Img" src={this.state.Echoes_Vid_Tumbnail} alt="Hobbies Thumbnail" width="266px" height="200px" className='landing-imgs' />
+                                <div className='center'>
+                                    <a className="a-pdf-download" name="Hobbies_Link" href='/hobbies'>Let me Tell you About What I Like!</a>
+                                </div>
                             </Col>
                             <Col>
-                                <a className="a-pdf-download" name="Academics_Link" href='/academics'>Check Out What I've Learned!</a>
+                                <img name="Academics_Img" src={this.state.School_Logo} alt="Academics Thumbnail" width="200px" height="200px" className='landing-imgs' />
+                                <div className='center'>
+                                    <a className="a-pdf-download" name="Academics_Link" href='/academics'>Check Out What I've Learned!</a>
+                                </div>
                             </Col>
                             <Col>
-                                <a className="a-pdf-download" name="Contact_Link" href='/contact'>Let's Get in Touch!</a>
+                                <img name="Contact_Img" src={this.state.Socials} alt="Contacts Thumbnail" width="200px" height="200px" className='landing-imgs' />
+                                <div className='center'>
+                                    <a className="a-pdf-download" name="Contact_Link" href='/contact'>Let's Get in Touch!</a>
+                                </div>
                             </Col>
                         </Row>
                     </Col>
