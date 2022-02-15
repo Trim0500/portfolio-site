@@ -1,24 +1,27 @@
 body {
-    background-color: #26003f !important;
+    background-color: #11001d !important;
 }
 h1 {
-    color: #167900;
+    color: #1a8b00;
     text-align: center;
     font-style: italic;
     font-weight: bold;
     font-family: 'Gadugi';
+    text-shadow: 2px 2px black;
 }
 h3 {
-    color: #167900;
+    color: #1a8b00;
     font-style: italic;
     font-weight: bold;
     font-family: 'Gadugi';
+    text-shadow: 2px 2px black;
 }
 h4 {
     color: #4bb932;
     font-style: italic;
     font-weight: bold;
     font-family: 'Gadugi';
+    text-shadow: 2px 2px black;
 }
 h4:hover {
     color: #0d4600;
@@ -29,30 +32,38 @@ h4:active {
     cursor: pointer;
 }
 p {
-    color: #0d4600;
+    color: #358d21;
     font-size: larger !important;
-    font-weight: bold;
+    text-shadow: 2px 2px black;
     font-family: 'Gadugi';
 }
 a {
-    color: #000060 !important;
+    color: #002ca5 !important;
     text-decoration: none !important;
     text-align: center !important;
     font-size: x-large !important;
     font-weight: bold;
+    text-shadow: 2px 2px black;
     font-family: 'Gadugi';
+}
+a:visited {
+    color: pink !important;
+}
+a:hover {
+    color: #00227e !important;
+}
+a:active {
+    color: #7e0000 !important;
 }
 iframe {
     display: block;
     margin: 0 auto 1em auto;
-    border: 2px solid #0d4600 !important;
 }
 .p-contact-link {
     color: #002ca5 !important;
     text-decoration: none !important;
     text-align: center !important;
     font-size: large !important;
-    font-weight: bold;
     font-family: 'Gadugi';
 }
 .a-pdf-download {
@@ -62,32 +73,48 @@ iframe {
     font-size: medium !important;
 }
 .nav {
-    background: rgba(255, 0, 0, 0.3) !important;
+    background: rgba(177, 0, 0, 0.3) !important;
     border: 1px solid #0d4600 !important;
+    margin-top: 1em;
 }
 .nav-item {
     opacity: 100%;
+}
+.container-fluid {
+    padding-right: var(--bs-gutter-x, 3rem);
+    padding-left: var(--bs-gutter-x, 3rem);
+    padding-top: 1em;
 }
 .container-content {
     background: rgba(20, 0, 165, .25) !important;
     border: 2px solid #0d4600 !important;
     padding-bottom: 1em !important;
+    margin-bottom: 1em;
+}
+.container-content-landing {
+    background: rgba(20, 0, 165, .25) !important;
+    border: 2px solid #0d4600 !important;
+    padding-bottom: 13% !important;
+    margin-bottom: 1em;
+}
+.anchor-nav {
+    text-align: center;
 }
 .btn.btn-primary {
     background-color: #0d4600 !important;
     border-color: #0d4600 !important;
     padding: 1.75rem 3.00rem !important;
-    color: gray !important;
+    color: lightgray !important;
 }
 .btn.btn-primary-pdf {
     background-color: #0d4600 !important;
     border-color: #0d4600 !important;
-    color: gray !important;
+    color: lightgray !important;
 }
 .form-control {
-    background: rgba(48, 48, 48, 0.5) !important;
-    border: 1px solid rgba(48, 48, 48, 0.5) !important;
-    color: gray !important;
+    background: #222 !important;
+    border: 1px solid #222 !important;
+    color: white !important;
 }
 .center {
     margin: auto;
@@ -95,20 +122,21 @@ iframe {
     padding: 10px;
     text-align: center;
 }
+.landing-imgs {
+    display: block;
+    margin: 0 auto 0 auto;
+}
 .edits-imgs {
     display: block;
     margin: 0 auto 0 auto;
-    border: 2px solid #0d4600 !important;
 }
 .landscapes-imgs {
     display: block;
     margin: 0 auto 0 auto;
-    border: 2px solid #0d4600 !important;
 }
 .academics-imgs {
     display: block;
     margin: auto;
-    border: 2px solid #0d4600 !important;
 }
 .contact-imgs {
     display: block;
