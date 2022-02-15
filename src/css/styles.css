@@ -157,6 +157,8 @@ iframe {
 .academics-imgs {
     display: block;
     margin: auto;
+    width: 100%;
+    height: auto;
 }
 .contact-imgs {
     display: block;
