@@ -102,7 +102,9 @@ export default class AcademicsPage extends React.Component {
             <Container>
                 <NavBar />
                 <Container className='container-content'>
-                    <span className='anchor-nav'><p>Quick Links: <a href='#Overview_Header'>Overview</a> <a href='#projectsHeader'>Notable Projects</a> <a href='#Student_Life_Header'>Student Life</a></p></span>
+                    <span className='anchor-nav'>
+                        <p>Quick Links: <a className='a-pdf-download' href='#Overview_Header'>Overview</a> <a className='a-pdf-download' href='#projectsHeader'>Notable Projects</a> <a className='a-pdf-download' href='#Student_Life_Header'>Student Life</a></p>
+                    </span>
                     <h1 id='Academics_Header' style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>My Academics</h1>
                     <Row>
                         <Col>
@@ -255,7 +257,7 @@ export default class AcademicsPage extends React.Component {
                             </Container>
                         </Col>
                     </Row>
-                    <span><p>Back to <a href='#Academics_Header'>top</a></p></span>
+                    <span><p>Back to <a className='a-pdf-download' href='#Academics_Header'>top</a></p></span>
                 </Container>
             </Container>
         )

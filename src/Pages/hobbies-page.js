@@ -70,7 +70,9 @@ export default class HobbiesPage extends React.Component {
             <Container>
                 <NavBar />
                 <Container className='container-content'>
-                    <span className='anchor-nav'><p>Quick Links: <a href='#Edits_Header'>Edits</a> <a href='#Videos_Header'>Videos</a> <a href='#Landscapes_Header'>Landscapes</a></p></span>
+                    <span className='anchor-nav'>
+                        <p>Quick Links: <a className='a-pdf-download' href='#Edits_Header'>Edits</a> <a className='a-pdf-download' href='#Videos_Header'>Videos</a> <a className='a-pdf-download' href='#Landscapes_Header'>Landscapes</a></p>
+                    </span>
                     <h1 id='Hobbies_Header' style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>My hobbies: Analysis, Editing &amp; More!</h1>
                     <Row>
                         <Col sm={5}>
@@ -140,7 +142,7 @@ export default class HobbiesPage extends React.Component {
                             <p style={{textAlign: "center"}}>I thought the top of the mountain would make for a great profile shot.</p>
                         </Col>
                     </Row>
-                    <span><p>Back to <a href='#Hobbies_Header'>top</a></p></span>
+                    <span><p>Back to <a className='a-pdf-download' href='#Hobbies_Header'>top</a></p></span>
                 </Container>
             </Container>
         )
