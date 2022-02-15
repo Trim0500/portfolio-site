@@ -147,7 +147,7 @@ export default class AcademicsPage extends React.Component {
                                                         </Col>
                                                         <Col>
                                                             <div className='video-container'>
-                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rE40K9uZmPA?controls=0&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rE40K9uZmPA?&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                             </div>
                                                         </Col>
                                                     </Row>
@@ -192,7 +192,7 @@ export default class AcademicsPage extends React.Component {
                                                         </Col>
                                                         <Col>
                                                             <div className='video-container'>
-                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/RerorDIrMDE?controls=0&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/RerorDIrMDE?&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                             </div>
                                                         </Col>
                                                     </Row>
@@ -220,7 +220,7 @@ export default class AcademicsPage extends React.Component {
                                                         </Col>
                                                         <Col>
                                                             <div className='video-container'>
-                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/P9NM07GIJt8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/P9NM07GIJt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                             </div>
                                                         </Col>
                                                     </Row>
@@ -258,7 +258,7 @@ export default class AcademicsPage extends React.Component {
                                     </Col>
                                     <Col>
                                     <div className='video-container'>
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/syEeMusOnyg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/syEeMusOnyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                     </Col>
                                 </Row>

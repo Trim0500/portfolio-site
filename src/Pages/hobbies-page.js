@@ -113,11 +113,11 @@ export default class HobbiesPage extends React.Component {
                         </Col>
                         <Col sm={7}>
                             <div className='video-container'>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wwiHrH4ebeM?controls=0&amp;start=757" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wwiHrH4ebeM?&amp;start=757" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <p style={{textAlign: "center"}}>One of my most recent &amp; personal favorite analysis videos! Strap in though, it's a long one!</p>
                             <div className='video-container'>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ak2lV5cVdP8?controls=0&amp;start=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ak2lV5cVdP8?&amp;start=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <p style={{textAlign: "center"}}>I thought this moment in Fire Emblem Binding Blade was funny!</p>
                         </Col>
