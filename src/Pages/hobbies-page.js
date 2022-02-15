@@ -112,9 +112,13 @@ export default class HobbiesPage extends React.Component {
                             <p>If you like the samples embedded here, check out the <a className='p-contact-link' href='/contact'>contact page</a> to find my channel!</p>
                         </Col>
                         <Col sm={7}>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wwiHrH4ebeM?controls=0&amp;start=757" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div className='video-container'>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wwiHrH4ebeM?controls=0&amp;start=757" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
                             <p style={{textAlign: "center"}}>One of my most recent &amp; personal favorite analysis videos! Strap in though, it's a long one!</p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ak2lV5cVdP8?controls=0&amp;start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div className='video-container'>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ak2lV5cVdP8?controls=0&amp;start=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
                             <p style={{textAlign: "center"}}>I thought this moment in Fire Emblem Binding Blade was funny!</p>
                         </Col>
                     </Row>
