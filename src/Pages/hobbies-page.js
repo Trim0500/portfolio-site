@@ -124,11 +124,11 @@ export default class HobbiesPage extends React.Component {
                     </Row>
                     <Row>
                         <Col>
-                            <img className='landscapes-imgs' name="Gaspésie_Img" src={this.state.Gaspésie} alt="Gaspésie mountain river" width="618px" height="285px" />
+                            <img style={{maxWidth: '618px'}} className='landscapes-imgs' name="Gaspésie_Img" src={this.state.Gaspésie} alt="Gaspésie mountain river" width="618px" height="285px" />
                             <p style={{textAlign: "center"}}>A cool shot looking out into a river at Gaspésie</p>
                         </Col>
                         <Col>
-                            <img className='landscapes-imgs' name="Winter_Img" src={this.state.Winter} alt="Winter farm field" width="618px" height="285px" />
+                            <img style={{maxWidth: '618px'}} className='landscapes-imgs' name="Winter_Img" src={this.state.Winter} alt="Winter farm field" width="618px" height="285px" />
                             <p style={{textAlign: "center"}}>Winter makes for gourgeous sunsets!</p>
                         </Col>
                     </Row>
