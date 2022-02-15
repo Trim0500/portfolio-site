@@ -70,10 +70,11 @@ export default class HobbiesPage extends React.Component {
             <Container>
                 <NavBar />
                 <Container className='container-content'>
-                    <h1 style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>My hobbies: Analysis, Editing &amp; More!</h1>
+                    <span className='anchor-nav'><p>Quick Links: <a href='#Edits_Header'>Edits</a> <a href='#Videos_Header'>Videos</a> <a href='#Landscapes_Header'>Landscapes</a></p></span>
+                    <h1 id='Hobbies_Header' style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>My hobbies: Analysis, Editing &amp; More!</h1>
                     <Row>
                         <Col sm={5}>
-                            <h3>Edits</h3>
+                            <h3 id='Edits_Header'>Edits</h3>
                             <p>{process.env.REACT_APP_EDITS_TEXT_1}</p>
                             <p>{process.env.REACT_APP_EDITS_TEXT_2}</p>
                             <p>Fun Fact: I made all of these edits on PowerPoint! It's lowkey a really good budget photoshop option!</p>
@@ -103,7 +104,7 @@ export default class HobbiesPage extends React.Component {
                     </Row>
                     <Row>
                         <Col sm={5}>
-                            <h3>Videos</h3>
+                            <h3 id='Videos_Header'>Videos</h3>
                             <p>{process.env.REACT_APP_VIDEOS_TEXT_1}</p>
                             <p>{process.env.REACT_APP_VIDEOS_TEXT_2}</p>
                             <p>If you like the samples embedded here, check out the <a className='p-contact-link' href='/contact'>contact page</a> to find my channel!</p>
@@ -116,7 +117,7 @@ export default class HobbiesPage extends React.Component {
                         </Col>
                     </Row>
                     <Row>
-                        <h1>Landscapes</h1>
+                        <h1 id='Landscapes_Header'>Landscapes</h1>
                         <p style={{textAlign: "center"}}>{process.env.REACT_APP_LANDSCAPES_TEXT}</p>
                     </Row>
                     <Row>
@@ -139,6 +140,7 @@ export default class HobbiesPage extends React.Component {
                             <p style={{textAlign: "center"}}>I thought the top of the mountain would make for a great profile shot.</p>
                         </Col>
                     </Row>
+                    <span><p>Back to <a href='#Hobbies_Header'>top</a></p></span>
                 </Container>
             </Container>
         )

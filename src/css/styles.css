@@ -97,6 +97,9 @@ iframe {
     padding-bottom: 13% !important;
     margin-bottom: 1em;
 }
+.anchor-nav {
+    text-align: center;
+}
 .btn.btn-primary {
     background-color: #0d4600 !important;
     border-color: #0d4600 !important;
