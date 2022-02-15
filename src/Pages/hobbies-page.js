@@ -84,21 +84,21 @@ export default class HobbiesPage extends React.Component {
                         <Col sm={7}>
                             <Row>
                                 <Col>
-                                    <img className='edits-imgs' name="Nutball_Img" src={this.state.Nutball} alt="Nutball meme" width="346px" height="260px" />
+                                    <img style={{maxWidth: '346px'}} className='edits-imgs' name="Nutball_Img" src={this.state.Nutball} alt="Nutball meme" width="346px" height="260px" />
                                     <p style={{textAlign: "center"}}>Nutball do be wild.</p>
                                 </Col>
                                 <Col>
-                                    <img className='edits-imgs' name="FE12_Img" src={this.state.New_Mystery} alt="New Mystery meme" width="346px" height="260px" />
+                                    <img style={{maxWidth: '346px'}} className='edits-imgs' name="FE12_Img" src={this.state.New_Mystery} alt="New Mystery meme" width="346px" height="260px" />
                                     <p style={{textAlign: "center"}}>I make the weirdest connections...</p>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
-                                    <img className='edits-imgs' name="FEH_Img" src={this.state.FEH} alt="FEH iPad background" width="346px" height="260px" />
+                                    <img style={{maxWidth: '346px'}} className='edits-imgs' name="FEH_Img" src={this.state.FEH} alt="FEH iPad background" width="346px" height="260px" />
                                     <p style={{textAlign: "center"}}>Fire Emblem Heroes iPad background which emphasizes my best units!</p>
                                 </Col>
                                 <Col>
-                                    <img className='edits-imgs' name="Virgin_Img" src={this.state.Virgin} alt="Vergil Bloody Palace run" width="346px" height="193px" />
+                                    <img style={{maxWidth: '346px'}} className='edits-imgs' name="Virgin_Img" src={this.state.Virgin} alt="Vergil Bloody Palace run" width="346px" height="193px" />
                                     <p style={{textAlign: "center"}}>This is one of the thumbnails to my first DMC5 Bloody Palace clear on YT!</p>
                                 </Col>
                             </Row>
