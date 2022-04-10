@@ -13,8 +13,6 @@ export default class ProfessionalPage extends React.Component {
                     <Row>
                         <Col>
                             <SinglePage pdf={process.env.PUBLIC_URL + '/Lafleur_CV.pdf'} />
-                        </Col>
-                        <Col>
                             <h1>Place details about particular experiences here</h1>
                         </Col>
                     </Row>
