@@ -144,12 +144,15 @@ export default class AcademicsPage extends React.Component {
                                                     <Row>
                                                         <Col>
                                                             <img style={{maxWidth: '531px'}} className='academics-imgs' name="Unity_Img" src={this.state.Unity} alt="Unity logo" width="531px" height="300px" />
-                                                        </Col>
-                                                        <Col>
                                                             <div className='video-container'>
                                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/rE40K9uZmPA?&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                             </div>
                                                         </Col>
+                                                        {/* <Col>
+                                                            <div className='video-container'>
+                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rE40K9uZmPA?&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                            </div>
+                                                        </Col> */}
                                                     </Row>
                                                     <p>
                                                         The game premise is rather silly, you’re a lone person having infiltrated PETA HQ to stop a ridiculous PR campaign and now needs to escape.
