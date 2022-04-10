@@ -148,11 +148,6 @@ export default class AcademicsPage extends React.Component {
                                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/rE40K9uZmPA?&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                             </div>
                                                         </Col>
-                                                        {/* <Col>
-                                                            <div className='video-container'>
-                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rE40K9uZmPA?&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                            </div>
-                                                        </Col> */}
                                                     </Row>
                                                     <p>
                                                         The game premise is rather silly, you’re a lone person having infiltrated PETA HQ to stop a ridiculous PR campaign and now needs to escape.
@@ -192,8 +187,6 @@ export default class AcademicsPage extends React.Component {
                                                     <Row>
                                                         <Col>
                                                             <img style={{maxWidth: '500px'}} className='academics-imgs' name=".NET_Img" src={this.state.MS_NET} alt=".NET logo" width="500px" height="315px" />
-                                                        </Col>
-                                                        <Col>
                                                             <div className='video-container'>
                                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/RerorDIrMDE?&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                             </div>
@@ -220,8 +213,6 @@ export default class AcademicsPage extends React.Component {
                                                     <Row>
                                                         <Col>
                                                             <img style={{maxWidth: '419px'}} className='academics-imgs' name="Arduino_Img" src={this.state.Arduino} alt="Arduino logo" width="419px" height="315px" />
-                                                        </Col>
-                                                        <Col>
                                                             <div className='video-container'>
                                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/P9NM07GIJt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                             </div>
