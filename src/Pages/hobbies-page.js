@@ -84,21 +84,21 @@ export default class HobbiesPage extends React.Component {
                         <Col sm={7}>
                             <Row>
                                 <Col>
-                                    <img className='edits-imgs' name="Nutball_Img" src={this.state.Nutball} alt="Nutball meme" width="346px" height="260px" />
+                                    <img style={{maxWidth: '346px'}} className='edits-imgs' name="Nutball_Img" src={this.state.Nutball} alt="Nutball meme" width="346px" height="260px" />
                                     <p style={{textAlign: "center"}}>Nutball do be wild.</p>
                                 </Col>
                                 <Col>
-                                    <img className='edits-imgs' name="FE12_Img" src={this.state.New_Mystery} alt="New Mystery meme" width="346px" height="260px" />
+                                    <img style={{maxWidth: '346px'}} className='edits-imgs' name="FE12_Img" src={this.state.New_Mystery} alt="New Mystery meme" width="346px" height="260px" />
                                     <p style={{textAlign: "center"}}>I make the weirdest connections...</p>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
-                                    <img className='edits-imgs' name="FEH_Img" src={this.state.FEH} alt="FEH iPad background" width="346px" height="260px" />
+                                    <img style={{maxWidth: '346px'}} className='edits-imgs' name="FEH_Img" src={this.state.FEH} alt="FEH iPad background" width="346px" height="260px" />
                                     <p style={{textAlign: "center"}}>Fire Emblem Heroes iPad background which emphasizes my best units!</p>
                                 </Col>
                                 <Col>
-                                    <img className='edits-imgs' name="Virgin_Img" src={this.state.Virgin} alt="Vergil Bloody Palace run" width="346px" height="193px" />
+                                    <img style={{maxWidth: '346px'}} className='edits-imgs' name="Virgin_Img" src={this.state.Virgin} alt="Vergil Bloody Palace run" width="346px" height="193px" />
                                     <p style={{textAlign: "center"}}>This is one of the thumbnails to my first DMC5 Bloody Palace clear on YT!</p>
                                 </Col>
                             </Row>
@@ -112,9 +112,13 @@ export default class HobbiesPage extends React.Component {
                             <p>If you like the samples embedded here, check out the <a className='p-contact-link' href='/contact'>contact page</a> to find my channel!</p>
                         </Col>
                         <Col sm={7}>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wwiHrH4ebeM?controls=0&amp;start=757" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div className='video-container'>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wwiHrH4ebeM?&amp;start=757" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
                             <p style={{textAlign: "center"}}>One of my most recent &amp; personal favorite analysis videos! Strap in though, it's a long one!</p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ak2lV5cVdP8?controls=0&amp;start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div className='video-container'>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ak2lV5cVdP8?&amp;start=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
                             <p style={{textAlign: "center"}}>I thought this moment in Fire Emblem Binding Blade was funny!</p>
                         </Col>
                     </Row>
@@ -124,11 +128,11 @@ export default class HobbiesPage extends React.Component {
                     </Row>
                     <Row>
                         <Col>
-                            <img className='landscapes-imgs' name="Gaspésie_Img" src={this.state.Gaspésie} alt="Gaspésie mountain river" width="618px" height="285px" />
+                            <img style={{maxWidth: '618px'}} className='landscapes-imgs' name="Gaspésie_Img" src={this.state.Gaspésie} alt="Gaspésie mountain river" width="618px" height="285px" />
                             <p style={{textAlign: "center"}}>A cool shot looking out into a river at Gaspésie</p>
                         </Col>
                         <Col>
-                            <img className='landscapes-imgs' name="Winter_Img" src={this.state.Winter} alt="Winter farm field" width="618px" height="285px" />
+                            <img style={{maxWidth: '618px'}} className='landscapes-imgs' name="Winter_Img" src={this.state.Winter} alt="Winter farm field" width="618px" height="285px" />
                             <p style={{textAlign: "center"}}>Winter makes for gourgeous sunsets!</p>
                         </Col>
                     </Row>
