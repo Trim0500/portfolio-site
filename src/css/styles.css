@@ -81,8 +81,13 @@ iframe {
     font-family: 'Gadugi';
 }
 .react-pdf__Page__canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
     width: 100% !important;
+    max-width: 612px !important;
     height: 100% !important;
+    max-height: 792px !important;
 }
 .a-pdf-download {
     color: #002ca5 !important;
