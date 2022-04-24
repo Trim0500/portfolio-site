@@ -160,23 +160,6 @@ export default class AcademicsPage extends React.Component {
                                             </Container>
                                         </li>
                                         <li style={{padding: '0.5em 0 0.5em 0'}}>
-                                            <h4 id='finalProjectHeader' onClick={this.showProjectsHeaders}>Champlain Petclinic - Final Project 1</h4>
-                                            <Container>
-                                                <div id='finalProjectText' style={{display: 'none'}}>
-                                                    <p>
-                                                        As part of a comprehensive class that is meant to test our ability to collate all our accumulated knowledge up to the end of the program,
-                                                        I had to team up with 4 other students to develop a “Bill” domain of a larger internal project mandated by our school’s department.
-                                                        We would carry out development in 2 week long sprints over 6 weeks using the SCRUM framework. 
-                                                    </p>
-                                                    <p>
-                                                        I would say that this was a critical experience to learn how to communicate,
-                                                        coordinate and perform in a professional environment which helped a great deal to know what to expect from my internship in the next semester.
-                                                        Some notable skills that were tested were my abilities to bring up and assign user stories, deliver a story in a full stack context, organize and conduct daily stand-ups &amp; present for Sprint Reviews.
-                                                    </p>
-                                                </div>
-                                            </Container>
-                                        </li>
-                                        <li style={{padding: '0.5em 0 0.5em 0'}}>
                                             <h4 id='netHeader' onClick={this.showProjectsHeaders}>Contacts App - .NET Development</h4>
                                             <Container>
                                                 <div id='netText' style={{display: 'none'}}>
@@ -224,6 +207,23 @@ export default class AcademicsPage extends React.Component {
                                                     </p>
                                                     <p>
                                                         You can check out <a className='p-contact-link' href='https://www.youtube.com/watch?v=P9NM07GIJt8&list=PLUlGrbJ3qjqbUdoJFW0wxEUmwPjdD2_vW&index=6'>this link</a> to view a demo of the lab and then go here to check out the code for it!
+                                                    </p>
+                                                </div>
+                                            </Container>
+                                        </li>
+                                        <li style={{padding: '0.5em 0 0.5em 0'}}>
+                                            <h4 id='finalProjectHeader' onClick={this.showProjectsHeaders}>Champlain Petclinic - Final Project 1</h4>
+                                            <Container>
+                                                <div id='finalProjectText' style={{display: 'none'}}>
+                                                    <p>
+                                                        As part of a comprehensive class that is meant to test our ability to collate all our accumulated knowledge up to the end of the program,
+                                                        I had to team up with 4 other students to develop a “Bill” domain of a larger internal project mandated by our school’s department.
+                                                        We would carry out development in 2 week long sprints over 6 weeks using the SCRUM framework. 
+                                                    </p>
+                                                    <p>
+                                                        I would say that this was a critical experience to learn how to communicate,
+                                                        coordinate and perform in a professional environment which helped a great deal to know what to expect from my internship in the next semester.
+                                                        Some notable skills that were tested were my abilities to bring up and assign user stories, deliver a story in a full stack context, organize and conduct daily stand-ups &amp; present for Sprint Reviews.
                                                     </p>
                                                 </div>
                                             </Container>
