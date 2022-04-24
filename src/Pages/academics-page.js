@@ -154,7 +154,7 @@ export default class AcademicsPage extends React.Component {
                                                         But hey, I feel like it’s important to not take it too seriously and a simple premise is enough if the core game is good right?
                                                     </p>
                                                     <p>
-                                                        I’m hosting a build on my <a className='p-contact-link' href='/contact'>GitHub</a> so if you want to give it a try, I implore you to play!
+                                                        I’m hosting a build on my <a className='p-contact-link' href='https://trim-ge2019.itch.io' target="_blank" rel="noopener noreferrer">Itch page</a> so if you want to give it a try, I implore you to play!
                                                     </p>
                                                 </div>
                                             </Container>
