@@ -199,6 +199,11 @@ export default class ContactPage extends React.Component {
                     <h1 style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>Let's Get in Touch!</h1>
                     <Row>
                         <Col>
+                            <div id='emailContainer'>
+                                <p>Send me an email at <a id='emailLinkGmail' href='mailto:codmakeskidsrage@gmail.com'>codmakeskidsrage@gmail.com</a></p>
+                                <p>OR</p>
+                                <p>Send me an email at <a id='emailLinkOutlook' href='mailto:tristanblacklafleur@hotmail.ca'>tristanblacklafleur@hotmail.ca</a></p>
+                            </div>
                             <form ref={this.form} onSubmit={this.HandleSubmit}>
                                 <input placeholder='Enter your name here...' className='form-control' type="text" name="from_name" value={this.state.from_name} onChange={this.handleChange}/><br/>
                                 <input placeholder='Enter your email here...' className='form-control' type="email" name="reply_to" value={this.state.reply_to} onChange={this.handleChange}/><br/>
