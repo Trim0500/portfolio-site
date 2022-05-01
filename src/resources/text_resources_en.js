@@ -1,5 +1,12 @@
 export const text_resources = {
     en: {
+        NAVBAR: {
+            HOME_TEXT: "Home",
+            HOBBIES_TEXT: "Hobbies",
+            ACADEMICS_TEXT: "Academics",
+            PROFESSIONAL_TEXT: "Professional Life",
+            CONTACT_TEXT: "Contact"
+        },
         HOME: {
             HOME_HEADER: "Welcome to Trim's Space!",
             HOME_OVERVIEW: "Hello and welcome to the personal website of one Tristan Lafleur! I'm a software developer who likes to primarily code for backend services in Java & C#.",
@@ -106,9 +113,32 @@ export const text_resources = {
                                 "This added a more human element to the company through an open phone line whereby I would occasionally have to quickly diagnose a problem and determine if a code fix was needed. " +
                                 "It was a unique challenge as it put pressure on balancing tickets and communicating with the teams.",
             INTERNSHIP_CONCLUSION: "Overall I feel as if I learned a great deal from the teams on code optimization, daily operations, communication in teams and multi-tasking tickets that I’ve already incorporated into my own personal work and projects!"
+        },
+        CONTACT: {
+            CONTACT_HEADER: "Let's Get in Touch!",
+            CONTACT_NAME_PLACEHOLDER: "Enter your name here...",
+            CONTACT_EMAIL_PLACEHOLDER: "Enter your email here...",
+            CONTACT_MESSAGE_PLACEHOLDER: "What are you writing for?",
+            CONTACT_SUBMIT_TEXT: "Submit Form",
+            CONTACT_YT_TEXT_1: "Watch my ",
+            CONTACT_YT_TEXT_2: "content!",
+            CONTACT_TWITTER_TEXT_1: "You can ",
+            CONTACT_TWITTER_TEXT_2: "interact",
+            CONTACT_TWITTER_TEXT_3: " with me here!",
+            CONTACT_GITHUB_TEXT_1: "View my ",
+            CONTACT_GITHUB_TEXT_2: "work and projects!",
+            CONTACT_LINKEDIN_TEXT_1: "This is my ",
+            CONTACT_LINKEDIN_TEXT_2: "work experience!"
         }
     },
     fr: {
+        NAVBAR: {
+            HOME_TEXT: "",
+            HOBBIES_TEXT: "",
+            ACADEMICS_TEXT: "",
+            PROFESSIONAL_TEXT: "",
+            CONTACT_TEXT: ""
+        },
         HOME: {
             HOME_HEADER: "",
             HOME_OVERVIEW: "",
@@ -186,6 +216,22 @@ export const text_resources = {
             INTERNSHIP_LEARNING: "",
             INTERNSHIP_UNIQUE: "",
             INTERNSHIP_CONCLUSION: ""
+        },
+        CONTACT: {
+            CONTACT_HEADER: "",
+            CONTACT_NAME_PLACEHOLDER: "",
+            CONTACT_EMAIL_PLACEHOLDER: "",
+            CONTACT_MESSAGE_PLACEHOLDER: "",
+            CONTACT_SUBMIT_TEXT: "",
+            CONTACT_YT_TEXT_1: "",
+            CONTACT_YT_TEXT_2: "",
+            CONTACT_TWITTER_TEXT_1: "",
+            CONTACT_TWITTER_TEXT_2: "",
+            CONTACT_TWITTER_TEXT_3: "",
+            CONTACT_GITHUB_TEXT_1: "",
+            CONTACT_GITHUB_TEXT_2: "",
+            CONTACT_LINKEDIN_TEXT_1: "",
+            CONTACT_LINKEDIN_TEXT_2: ""
         }
     }
 }
