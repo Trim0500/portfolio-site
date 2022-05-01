@@ -43,6 +43,57 @@ export const text_resources = {
             HOBBIES_BACKTOP_TEXT_1: "Back to ",
             HOBBIES_BACKTOP_TEXT_2: "top"
         },
+        ACADEMICS: {
+            QUICK_LINKS: "Quick Links: ",
+            OVERVIEW_LINK: "Overview",
+            NOTABLE_PROJECTS_LINK: "Notable Projects",
+            STUDENT_LIFE_LINK: "Student Life",
+            ACADEMICS_HEADER: "My Academics",
+            ACADEMICS_OVERVIEW: "Overview of Comp Sci @ Champlain",
+            OVERVIEW_TEXT: "The highest level of education I have achieved thus far is a technical degree of collegial studies at Champlain College St. Lambert in Longueil Quebec." +
+                        "It lasted about 3 years and covered a wide array of topics and fields in computer science." +
+                        "From simple programming in Java to building entire web services, conducting system analysis, carrying out SCRUM projects and much, much more." +
+                        "I’d like to think that from this part of my educational career, I really came into my own as a backend developer specializing in C#.",
+            NOTABLE_PROJECTS_HEADER: "Notable Projects",
+            PETA_HEADER: "PETA Wars - Game Development w/Unity",
+            CONTACTS_APP_HEADER: "Contacts App - .NET Development",
+            IOT_HEADER: "Ultrasound RGB Sensor - Introduction to IoT & C++",
+            PETCLINIC_HEADER: "Champlain Petclinic - Final Project 1",
+            PETA_OVERVIEW_TEXT: "Easily my favorite project to date has been the video game that I had to build from scratch for my game development class using the Unity game engine." +
+                                "From that course I gained a host of skills that I’ve been taking some time long after the class has concluded such as programming scene transitions, UI, crafting design documents for screens and using tile maps to make them, leading a development team and my favorite; camera control!",
+            PETA_PREMISE_TEXT: "The game premise is rather silly, you’re a lone person having infiltrated PETA HQ to stop a ridiculous PR campaign and now needs to escape." +
+                            "But hey, I feel like it’s important to not take it too seriously and a simple premise is enough if the core game is good right?",
+            PETA_HOSTING_TEXT_1: "I’m hosting a build on my ",
+            PETA_HOSTING_TEXT_2: "Itch page",
+            PETA_HOSTING_TEXT_3: " so if you want to give it a try, I implore you to play!",
+            CONTACTS_OVERVIEW_TEXT: "This was the course project I had to make w/2 other students in our .NET class." +
+                                    "The objective was to create a console app that allows a user to manage their contacts stored on a database using WPF.",
+            CONTACTS_SPECIFICS_TEXT: "I thought this was a fun project to take on considering that I really enjoyed making C# & WPF apps in .NET." +
+                                    "I would say that this project is what sold me on .NET development by the end of it." +
+                                    "It allows for full CRUD operations on the contacts, importing and exporting the contacts into csv files, connecting to SQL Server instance, filtering the contacts and has a user-friendly interface to boot!",
+            CONTACTS_HOSTING_TEXT_1: "This project is hosted on my ",
+            CONTACTS_HOSTING_TEXT_2: "Github",
+            CONTACTS_HOSTING_TEXT_3: " as one of my pinned projects so feel free to click here to see it and run it if you want!",
+            IOT_OVERVIEW_TEXT: "The IoT course was nothing short of a nice change of pace from the rest of the courses in the program as it was a fun bout of creative engineering for sure!" +
+                            "One of my favorite labs to have come out of that course was a small ultrasound device that would detect your relative distance to it and use an RGB LED to signal if you were close to it or far!",
+            IOT_SPECIFICS_TEXT: "This was a lab where I was free to experiment on whatever I wanted so long as I was using an input device with some output." +
+                                "By the lab’s completion I was giddy to show people what I had built and felt very proud of it despite it’s relative simplicity!",
+            IOT_HOSTING_TEXT_1: "You can check out ",
+            IOT_HOSTING_TEXT_2: "this link",
+            IOT_HOSTING_TEXT_3: " to view a demo of the lab and then go here to check out the code for it!",
+            PETCLINIC_OVERVIEW_TEXT: "As part of a comprehensive class that is meant to test our ability to collate all our accumulated knowledge up to the end of the program, I had to team up with 4 other students to develop a “Bill” domain of a larger internal project mandated by our school’s department." +
+                                    "We would carry out development in 2 week long sprints over 6 weeks using the SCRUM framework.",
+            PETCLINIC_SPECIFICS_TEXT: "I would say that this was a critical experience to learn how to communicate, coordinate and perform in a professional environment which helped a great deal to know what to expect from my internship in the next semester." +
+                                    "Some notable skills that were tested were my abilities to bring up and assign user stories, deliver a story in a full stack context, organize and conduct daily stand-ups & present for Sprint Reviews.",
+            STUDENT_LIFE_HEADER: "Engagement in Student Life",
+            STUDENT_LIFE_OVERVIEW: "Of course, schooling for me wasn’t just lecture here, lab there and test over yonder." +
+                                "During my time at Champlain I decided to join it’s Gaming Club managed by other students at the school and became an Executive and later on, President!",
+            STUDENT_LIFE_SPECIFICS: "During my tenure as an Executive and President I had the responsibility of maintaining the club space at school to be inviting, positive and a reprieve from the stresses and volatility of everyday school life." +
+                                    "Our room was small but cozy and our numbers were large and passionate!" +
+                                    "To that end I organized several events and fundraisers, maintained a public Discord and stayed in the good graces of our student association and administrative body!",
+            ACADEMICS_BACKTOP_TEXT_1: "Back to ",
+            ACADEMICS_BACKTOP_TEXT_2: "top"
+        },
         PROFESSIONAL: {
             INTERNSHIP_HEADING: "NexOne Internship",
             INTERNSHIP_OVERVIEW: "From March 2022 to May 2022 I was taken on as an intern at NexOne Real Estate Solutions. " +
@@ -92,6 +143,42 @@ export const text_resources = {
             LANDSCAPES_PORTRAIT_TEXT: "",
             HOBBIES_BACKTOP_TEXT_1: "",
             HOBBIES_BACKTOP_TEXT_2: ""
+        },
+        ACADEMICS: {
+            QUICK_LINKS: "",
+            OVERVIEW_LINK: "",
+            NOTABLE_PROJECTS_LINK: "",
+            STUDENT_LIFE_LINK: "",
+            ACADEMICS_HEADER: "",
+            ACADEMICS_OVERVIEW: "",
+            OVERVIEW_TEXT: "",
+            NOTABLE_PROJECTS_HEADER: "",
+            PETA_HEADER: "",
+            CONTACTS_APP_HEADER: "",
+            IOT_HEADER: "",
+            PETCLINIC_HEADER: "",
+            PETA_OVERVIEW_TEXT: "",
+            PETA_PREMISE_TEXT: "",
+            PETA_HOSTING_TEXT_1: "",
+            PETA_HOSTING_TEXT_2: "",
+            PETA_HOSTING_TEXT_3: "",
+            CONTACTS_OVERVIEW_TEXT: "",
+            CONTACTS_SPECIFICS_TEXT: "",
+            CONTACTS_HOSTING_TEXT_1: "",
+            CONTACTS_HOSTING_TEXT_2: '',
+            CONTACTS_HOSTING_TEXT_3: "",
+            IOT_OVERVIEW_TEXT: "",
+            IOT_SPECIFICS_TEXT: "",
+            IOT_HOSTING_TEXT_1: "",
+            IOT_HOSTING_TEXT_2: "",
+            IOT_HOSTING_TEXT_3: "",
+            PETCLINIC_OVERVIEW_TEXT: "",
+            PETCLINIC_SPECIFICS_TEXT: "",
+            STUDENT_LIFE_HEADER: "",
+            STUDENT_LIFE_OVERVIEW: "",
+            STUDENT_LIFE_SPECIFICS: "",
+            ACADEMICS_BACKTOP_TEXT_1: "",
+            ACADEMICS_BACKTOP_TEXT_2: ""
         },
         PROFESSIONAL: {
             INTERNSHIP_HEADING: "",
