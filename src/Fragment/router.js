@@ -23,7 +23,7 @@ export default function UseRouter() {
 
             <Router>
                 <Routes>
-                    <Route path="/" element={<Homepage />} />
+                    <Route path="/" element={<Homepage language={language} />} />
                     <Route path="/hobbies" element={<HobbiesPage />} />
                     <Route path="/academics" element={<AcademicsPage />} />
                     <Route path="/professional" element={<ProfessionalPage language={language} />} />

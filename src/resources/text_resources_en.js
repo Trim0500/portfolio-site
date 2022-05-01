@@ -1,5 +1,12 @@
 export const text_resources = {
     en: {
+        HOME: {
+            HOME_HEADER: "Welcome to Trim's Space!",
+            HOME_OVERVIEW: "Hello and welcome to the personal website of one Tristan Lafleur! I'm a software developer who likes to primarily code for backend services in Java & C#.",
+            HOME_HOBBIES_TEXT: "Let me Tell you About What I Like!",
+            HOME_ACADEMICS_TEXT: "Check Out What I've Learned!",
+            HOME_CONTACT_TEXT: "Let's Get in Touch!"
+        },
         PROFESSIONAL: {
             INTERNSHIP_HEADING: "NexOne Internship",
             INTERNSHIP_OVERVIEW: "From March 2022 to May 2022 I was taken on as an intern at NexOne Real Estate Solutions. " +
@@ -15,6 +22,13 @@ export const text_resources = {
         }
     },
     fr: {
+        HOME: {
+            HOME_HEADER: "",
+            HOME_OVERVIEW: "",
+            HOME_HOBBIES_TEXT: "",
+            HOME_ACADEMICS_TEXT: "",
+            HOME_CONTACT_TEXT: ""
+        },
         PROFESSIONAL: {
             INTERNSHIP_HEADING: "",
             INTERNSHIP_OVERVIEW: "",
