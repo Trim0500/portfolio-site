@@ -116,6 +116,8 @@ export const text_resources = {
         },
         CONTACT: {
             CONTACT_HEADER: "Let's Get in Touch!",
+            CONTACT_EMAIL_PROMPT_TEXT: "Send me an email at ",
+            CONTACT_OR_TEXT: "OR",
             CONTACT_NAME_PLACEHOLDER: "Enter your name here...",
             CONTACT_EMAIL_PLACEHOLDER: "Enter your email here...",
             CONTACT_MESSAGE_PLACEHOLDER: "What are you writing for?",
@@ -219,6 +221,8 @@ export const text_resources = {
         },
         CONTACT: {
             CONTACT_HEADER: "",
+            CONTACT_EMAIL_PROMPT_TEXT: "",
+            CONTACT_OR_TEXT: "",
             CONTACT_NAME_PLACEHOLDER: "",
             CONTACT_EMAIL_PLACEHOLDER: "",
             CONTACT_MESSAGE_PLACEHOLDER: "",
