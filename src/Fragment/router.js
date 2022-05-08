@@ -25,7 +25,7 @@ export default function UseRouter() {
                 <Routes>
                     <Route path="/" element={<Homepage language={language} />} />
                     <Route path="/hobbies" element={<HobbiesPage language={language}/>} />
-                    <Route path="/academics" element={<AcademicsPage />} />
+                    <Route path="/academics" element={<AcademicsPage language={language} />} />
                     <Route path="/professional" element={<ProfessionalPage language={language} />} />
                     <Route path="/contact" element={<ContactPage />} />
                 </Routes>
