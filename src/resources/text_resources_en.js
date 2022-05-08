@@ -142,11 +142,12 @@ export const text_resources = {
             CONTACT_TEXT: ""
         },
         HOME: {
-            HOME_HEADER: "",
-            HOME_OVERVIEW: "",
-            HOME_HOBBIES_TEXT: "",
-            HOME_ACADEMICS_TEXT: "",
-            HOME_CONTACT_TEXT: ""
+            HOME_HEADER: "Bienvenue au Site de Trim!",
+            HOME_OVERVIEW: "Bonjour! Et soyez a la bienvenue au site personel de Tristan Lafleur!"
+                        + " Je suis un developeur logiciels qui spécialise en C# et Java.",
+            HOME_HOBBIES_TEXT: "Voici mes intérêts!",
+            HOME_ACADEMICS_TEXT: "Éxplore mes connaisances!",
+            HOME_CONTACT_TEXT: "Lance moi un coup de files!"
         },
         HOBBIES: {
             QUICK_LINKS: "",
