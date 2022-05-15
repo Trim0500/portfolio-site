@@ -60,7 +60,7 @@ iframe {
     margin: 0 auto 1em auto;
 }
 .nav-item {
-    opcaity: 100% !important;
+    opacity: 100% !important;
 }
 .video-container {
     position: relative;
