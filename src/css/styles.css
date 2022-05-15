@@ -59,9 +59,6 @@ iframe {
     display: block;
     margin: 0 auto 1em auto;
 }
-.nav-item {
-    opacity: 100% !important;
-}
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -102,9 +99,6 @@ iframe {
     background: rgba(177, 0, 0, 0.3) !important;
     border: 1px solid #0d4600 !important;
     margin-top: 1em;
-}
-.nav-item {
-    opacity: 100%;
 }
 .container-fluid {
     padding-right: var(--bs-gutter-x, 3rem);
