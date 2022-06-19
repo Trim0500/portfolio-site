@@ -150,8 +150,8 @@ export const text_resources = {
             HOME_CONTACT_TEXT: "Lance moi un coup de files!"
         },
         HOBBIES: {
-            QUICK_LINKS: "",
-            EDITS_LINK: "",
+            QUICK_LINKS: "Liens rapides: ",
+            EDITS_LINK: "Modifications Photos",
             VIDEOS_LINK: "",
             LANDSCAPES_LINK: "",
             HOBBIES_HEADER: "",
