@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import NavBar from '../Fragment/navbar';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
+import { text_resources } from '../resources/text_resources_en';
 
 export default class ContactPage extends React.Component {
     constructor(props) {
@@ -192,19 +193,26 @@ export default class ContactPage extends React.Component {
     }
 
     render() {
+        const _text = text_resources[this.props.language];
+
         return (
             <Container>
                 <NavBar />
                 <Container className='container-content'>
-                    <h1 style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>Let's Get in Touch!</h1>
+                    <h1 style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>{_text.CONTACT.CONTACT_HEADER}</h1>
                     <Row>
                         <Col>
+                            <div id='emailContainer'>
+                                <p>{_text.CONTACT.CONTACT_EMAIL_PROMPT_TEXT}<a id='emailLinkGmail' href='mailto:codmakeskidsrage@gmail.com'>codmakeskidsrage@gmail.com</a></p>
+                                <p>{_text.CONTACT.CONTACT_OR_TEXT}</p>
+                                <p>{_text.CONTACT.CONTACT_EMAIL_PROMPT_TEXT}<a id='emailLinkOutlook' href='mailto:tristanblacklafleur@hotmail.ca'>tristanblacklafleur@hotmail.ca</a></p>
+                            </div>
                             <form ref={this.form} onSubmit={this.HandleSubmit}>
-                                <input placeholder='Enter your name here...' className='form-control' type="text" name="from_name" value={this.state.from_name} onChange={this.handleChange}/><br/>
-                                <input placeholder='Enter your email here...' className='form-control' type="email" name="reply_to" value={this.state.reply_to} onChange={this.handleChange}/><br/>
-                                <textarea placeholder='What are you writing for?' className='form-control' name="message" rows="15" value={this.state.message} onChange={this.handleChange}/><br/>
+                                <input placeholder={_text.CONTACT.CONTACT_NAME_PLACEHOLDER} className='form-control' type="text" name="from_name" value={this.state.from_name} onChange={this.handleChange}/><br/>
+                                <input placeholder={_text.CONTACT.CONTACT_EMAIL_PLACEHOLDER} className='form-control' type="email" name="reply_to" value={this.state.reply_to} onChange={this.handleChange}/><br/>
+                                <textarea placeholder={_text.CONTACT.CONTACT_MESSAGE_PLACEHOLDER} className='form-control' name="message" rows="15" value={this.state.message} onChange={this.handleChange}/><br/>
                                 <ReCAPTCHA ref={this.recaptchaRef} theme='dark' sitekey={!process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? process.env.REACT_APP_RECAPTCHA_SITE_KEY_LOCAL : process.env.REACT_APP_RECAPTCHA_SITE_KEY} /><br/>
-                                <input style={{display: 'block', margin: 'auto'}} className="btn btn-primary" type="submit" value="Submit Form" />
+                                <input style={{display: 'block', margin: 'auto'}} className="btn btn-primary" type="submit" value={_text.CONTACT.CONTACT_SUBMIT_TEXT} />
                                 <div id='notif_msg' style={{display: 'none'}}></div>
                             </form>
                         </Col>
@@ -212,21 +220,21 @@ export default class ContactPage extends React.Component {
                             <Row>
                                 <Col>
                                     <img name="yt_img" src={this.state.YouTube} alt="YT Logo" className='contact-imgs' width="200px" height="200px" />
-                                    <p style={{textAlign: 'center'}}>Watch my <a href='https://www.youtube.com/channel/UCaINTVin3xqRL_ODGmTxw6A' className='p-contact-link'>content!</a></p>
+                                    <p style={{textAlign: 'center'}}>{_text.CONTACT.CONTACT_YT_TEXT_1}<a href='https://www.youtube.com/channel/UCaINTVin3xqRL_ODGmTxw6A' className='p-contact-link'>{_text.CONTACT.CONTACT_YT_TEXT_2}</a></p>
                                 </Col>
                                 <Col>
                                     <img name="twitter_img" src={this.state.Twitter} alt="Twitter Logo" className='contact-imgs' width="200px" height="200px" />
-                                    <p style={{textAlign: 'center'}}>You can <a href='https://twitter.com/TrimTheTrimaloo' className='p-contact-link'>interact</a> with me here!</p>
+                                    <p style={{textAlign: 'center'}}>{_text.CONTACT.CONTACT_TWITTER_TEXT_1}<a href='https://twitter.com/TrimTheTrimaloo' className='p-contact-link'>{_text.CONTACT.CONTACT_TWITTER_TEXT_2}</a>{_text.CONTACT.CONTACT_TWITTER_TEXT_3}</p>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
                                     <img name="github_img" src={this.state.GitHub} alt="GitHub Logo" className='contact-imgs' width="200px" height="200px" />
-                                    <p style={{textAlign: 'center'}}>View my <a href='https://github.com/Trim0500' className='p-contact-link'>work and projects!</a></p>
+                                    <p style={{textAlign: 'center'}}>{_text.CONTACT.CONTACT_GITHUB_TEXT_1}<a href='https://github.com/Trim0500' className='p-contact-link'>{_text.CONTACT.CONTACT_GITHUB_TEXT_2}</a></p>
                                 </Col>
                                 <Col>
                                     <img name="linkedin_img" src={this.state.LinkedIn} alt="LinkedIn Logo" className='contact-imgs' width="200px" height="200px" />
-                                    <p style={{textAlign: 'center'}}>This is my <a href='https://www.linkedin.com/in/tristanlafleur/' className='p-contact-link'>work experience!</a></p>
+                                    <p style={{textAlign: 'center'}}>{_text.CONTACT.CONTACT_LINKEDIN_TEXT_1}<a href='https://www.linkedin.com/in/tristanlafleur/' className='p-contact-link'>{_text.CONTACT.CONTACT_LINKEDIN_TEXT_2}</a></p>
                                 </Col>
                             </Row>
                         </Col>

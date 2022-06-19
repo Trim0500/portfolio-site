@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../Fragment/navbar';
 import { Col, Container, Row } from 'react-bootstrap';
+import { text_resources } from '../resources/text_resources_en';
 
 export default class HobbiesPage extends React.Component {
     constructor(props) {
@@ -66,87 +67,89 @@ export default class HobbiesPage extends React.Component {
     }
 
     render() {
+        const _text = text_resources[this.props.language];
+
         return (
             <Container>
                 <NavBar />
                 <Container className='container-content'>
                     <span className='anchor-nav'>
-                        <p>Quick Links: <a className='a-pdf-download' href='#Edits_Header'>Edits</a> <a className='a-pdf-download' href='#Videos_Header'>Videos</a> <a className='a-pdf-download' href='#Landscapes_Header'>Landscapes</a></p>
+                        <p>{_text.HOBBIES.QUICK_LINKS}<a className='a-pdf-download' href='#Edits_Header'>{_text.HOBBIES.EDITS_LINK}</a> <a className='a-pdf-download' href='#Videos_Header'>{_text.HOBBIES.VIDEOS_LINK}</a> <a className='a-pdf-download' href='#Landscapes_Header'>{_text.HOBBIES.LANDSCAPES_LINK}</a></p>
                     </span>
-                    <h1 id='Hobbies_Header' style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>My hobbies: Analysis, Editing &amp; More!</h1>
+                    <h1 id='Hobbies_Header' style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>{_text.HOBBIES.HOBBIES_HEADER}</h1>
                     <Row>
                         <Col sm={5}>
-                            <h3 id='Edits_Header'>Edits</h3>
-                            <p>{process.env.REACT_APP_EDITS_TEXT_1}</p>
-                            <p>{process.env.REACT_APP_EDITS_TEXT_2}</p>
-                            <p>Fun Fact: I made all of these edits on PowerPoint! It's lowkey a really good budget photoshop option!</p>
+                            <h3 id='Edits_Header'>{_text.HOBBIES.EDITS_LINK}</h3>
+                            <p>{_text.HOBBIES.EDITS_INTRO_TEXT}</p>
+                            <p>{_text.HOBBIES.EDITS_EXAMPLE_TEXT}</p>
+                            <p>{_text.HOBBIES.EDITS_FUN_FACT_TEXT}</p>
                         </Col>
                         <Col sm={7}>
                             <Row>
                                 <Col>
                                     <img style={{maxWidth: '346px'}} className='edits-imgs' name="Nutball_Img" src={this.state.Nutball} alt="Nutball meme" width="346px" height="260px" />
-                                    <p style={{textAlign: "center"}}>Nutball do be wild.</p>
+                                    <p style={{textAlign: "center"}}>{_text.HOBBIES.EDITS_NUTBALL_TEXT}</p>
                                 </Col>
                                 <Col>
                                     <img style={{maxWidth: '346px'}} className='edits-imgs' name="FE12_Img" src={this.state.New_Mystery} alt="New Mystery meme" width="346px" height="260px" />
-                                    <p style={{textAlign: "center"}}>I make the weirdest connections...</p>
+                                    <p style={{textAlign: "center"}}>{_text.HOBBIES.EDITS_NM_TEXT}</p>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
                                     <img style={{maxWidth: '346px'}} className='edits-imgs' name="FEH_Img" src={this.state.FEH} alt="FEH iPad background" width="346px" height="260px" />
-                                    <p style={{textAlign: "center"}}>Fire Emblem Heroes iPad background which emphasizes my best units!</p>
+                                    <p style={{textAlign: "center"}}>{_text.HOBBIES.EDITS_FEH_TEXT}</p>
                                 </Col>
                                 <Col>
                                     <img style={{maxWidth: '346px'}} className='edits-imgs' name="Virgin_Img" src={this.state.Virgin} alt="Vergil Bloody Palace run" width="346px" height="193px" />
-                                    <p style={{textAlign: "center"}}>This is one of the thumbnails to my first DMC5 Bloody Palace clear on YT!</p>
+                                    <p style={{textAlign: "center"}}>{_text.HOBBIES.EDITS_BLOODY_PALACE_TEXT}</p>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
                     <Row>
                         <Col sm={5}>
-                            <h3 id='Videos_Header'>Videos</h3>
-                            <p>{process.env.REACT_APP_VIDEOS_TEXT_1}</p>
-                            <p>{process.env.REACT_APP_VIDEOS_TEXT_2}</p>
-                            <p>If you like the samples embedded here, check out the <a className='p-contact-link' href='/contact'>contact page</a> to find my channel!</p>
+                            <h3 id='Videos_Header'>{_text.HOBBIES.VIDEOS_LINK}</h3>
+                            <p>{_text.HOBBIES.VIDEOS_INTRO_TEXT}</p>
+                            <p>{_text.HOBBIES.VIDEOS_EXAMPLES_TEXT}</p>
+                            <p>{_text.HOBBIES.VIDEOS_LINK_TEXT_1}<a className='p-contact-link' href='/contact'>{_text.HOBBIES.VIDEOS_LINK_TEXT_2}</a>{_text.HOBBIES.VIDEOS_LINK_TEXT_3}</p>
                         </Col>
                         <Col sm={7}>
                             <div className='video-container'>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wwiHrH4ebeM?&amp;start=757" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
-                            <p style={{textAlign: "center"}}>One of my most recent &amp; personal favorite analysis videos! Strap in though, it's a long one!</p>
+                            <p style={{textAlign: "center"}}>{_text.HOBBIES.VIDEOS_ECHOES_TEXT}</p>
                             <div className='video-container'>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ak2lV5cVdP8?&amp;start=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
-                            <p style={{textAlign: "center"}}>I thought this moment in Fire Emblem Binding Blade was funny!</p>
+                            <p style={{textAlign: "center"}}>{_text.HOBBIES.VIDEOS_MEME_TEXT}</p>
                         </Col>
                     </Row>
                     <Row>
-                        <h1 id='Landscapes_Header'>Landscapes</h1>
-                        <p style={{textAlign: "center"}}>{process.env.REACT_APP_LANDSCAPES_TEXT}</p>
+                        <h1 id='Landscapes_Header'>{_text.HOBBIES.LANDSCAPES_LINK}</h1>
+                        <p style={{textAlign: "center"}}>{_text.HOBBIES.LANDSCAPES_OVERVIEW_TEXT}</p>
                     </Row>
                     <Row>
                         <Col>
                             <img style={{maxWidth: '618px'}} className='landscapes-imgs' name="Gaspésie_Img" src={this.state.Gaspésie} alt="Gaspésie mountain river" width="618px" height="285px" />
-                            <p style={{textAlign: "center"}}>A cool shot looking out into a river at Gaspésie</p>
+                            <p style={{textAlign: "center"}}>{_text.HOBBIES.LANDSCAPES_GASPESIE_TEXT}</p>
                         </Col>
                         <Col>
                             <img style={{maxWidth: '618px'}} className='landscapes-imgs' name="Winter_Img" src={this.state.Winter} alt="Winter farm field" width="618px" height="285px" />
-                            <p style={{textAlign: "center"}}>Winter makes for gourgeous sunsets!</p>
+                            <p style={{textAlign: "center"}}>{_text.HOBBIES.LANDSCAPES_WINTER_TEXT}</p>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <img className='landscapes-imgs' name="Flower_Img" src={this.state.Flowers} alt="White flower close-up" />
-                            <p style={{textAlign: "center"}}>Got a neat close-up w/background being blurred out!</p>
+                            <p style={{textAlign: "center"}}>{_text.HOBBIES.LANDSCAPES_FLOWER_TEXT}</p>
                         </Col>
                         <Col>
                             <img className='landscapes-imgs' name="Horizon_Img" src={this.state.Horizon} alt="Gaspésie horizon selfie" />
-                            <p style={{textAlign: "center"}}>I thought the top of the mountain would make for a great profile shot.</p>
+                            <p style={{textAlign: "center"}}>{_text.HOBBIES.LANDSCAPES_PORTRAIT_TEXT}</p>
                         </Col>
                     </Row>
-                    <span><p>Back to <a className='a-pdf-download' href='#Hobbies_Header'>top</a></p></span>
+                    <span><p>{_text.HOBBIES.HOBBIES_BACKTOP_TEXT_1}<a className='a-pdf-download' href='#Hobbies_Header'>{_text.HOBBIES.HOBBIES_BACKTOP_TEXT_2}</a></p></span>
                 </Container>
             </Container>
         )
