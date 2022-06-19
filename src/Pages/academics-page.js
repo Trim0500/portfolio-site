@@ -145,7 +145,7 @@ export default class AcademicsPage extends React.Component {
                                                     </Row>
                                                     <p>{_text.ACADEMICS.PETA_PREMISE_TEXT}</p>
                                                     <p>
-                                                        {_text.ACADEMICS.PETA_HOSTING_TEXT_1}<a className='p-contact-link' href='https://trim-ge2019.itch.io' target="_blank" rel="noopener noreferrer">{_text.ACADEMICS.PETA_HOSTING_TEXT_2}</a>{_text.ACADEMICS.PETA_HOSTING_TEXT_3}
+                                                        {_text.ACADEMICS.PETA_HOSTING_TEXT_1}<a className='p-contact-link' href='https://trim-ge2019.itch.io/peta-wars' target="_blank" rel="noopener noreferrer">{_text.ACADEMICS.PETA_HOSTING_TEXT_2}</a>{_text.ACADEMICS.PETA_HOSTING_TEXT_3}
                                                     </p>
                                                 </div>
                                             </Container>
