@@ -71,6 +71,7 @@ export default class Homepage extends React.Component {
                         <Col sm={7} name="Header_Div">
                             <h1>{_text.HOME.HOME_HEADER}</h1>
                             <p>{_text.HOME.HOME_OVERVIEW}</p>
+                            <p>{_text.HOME.HOME_OVERVIEW_GOALS}</p>
                             <Row>
                                 <Col>
                                     <img style={{maxWidth: '266px'}} name="Hobbies_Img" src={this.state.Echoes_Vid_Tumbnail} alt="Hobbies Thumbnail" width="266px" height="200px" className='landing-imgs' />

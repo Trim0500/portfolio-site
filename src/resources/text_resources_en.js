@@ -9,7 +9,8 @@ export const text_resources = {
         },
         HOME: {
             HOME_HEADER: "Welcome to Trim's Space!",
-            HOME_OVERVIEW: "Hello and welcome to the personal website of one Tristan Lafleur! I'm a software developer who likes to primarily code for backend services in Java & C#.",
+            HOME_OVERVIEW: "Hello and welcome to the personal website of one Tristan Lafleur! Part-time Full Stack .NET Developer, full-time student majoring in Data Science!",
+            HOME_OVERVIEW_GOALS: "My motto is work hard, play hard and stay honest to youself. I aim to aquire more advanced knowledge in the software development space to create robust, durable products that I can look back on and be proud of!",
             HOME_HOBBIES_TEXT: "Let me Tell you About What I Like!",
             HOME_ACADEMICS_TEXT: "Check Out What I've Learned!",
             HOME_CONTACT_TEXT: "Let's Get in Touch!"
