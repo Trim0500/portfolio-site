@@ -57,6 +57,11 @@ export const text_resources = {
             NOTABLE_PROJECTS_LINK: "Notable Projects",
             STUDENT_LIFE_LINK: "Student Life",
             ACADEMICS_HEADER: "My Academics",
+            ACADEMICS_OVERVIEW_CONCO: "Overview of Data Science @ Concordia",
+            OVERVIEW_TEXT_CONCO: "Currently I have enrolled in Concordia Univeristy's Data Science program. I am persuing a degree in " +
+                                "Computer Science Majoring in Data Science combining hard math and computational technology to, as the university " +
+                                "puts it, \"Crunch numbers to the nth degree — and see what happens.\" Throughout this program I will practice mathematical " +
+                                "theory, develop stronger knowledge of database design, further understand the nature of programming languages and more!",
             ACADEMICS_OVERVIEW: "Overview of Comp Sci @ Champlain",
             OVERVIEW_TEXT: "The highest level of education I have achieved thus far is a technical degree of collegial studies at Champlain College St. Lambert in Longueil Quebec." +
                         "It lasted about 3 years and covered a wide array of topics and fields in computer science." +
