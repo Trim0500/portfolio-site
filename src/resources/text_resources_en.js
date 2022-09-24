@@ -16,10 +16,10 @@ export const text_resources = {
         },
         HOBBIES: {
             QUICK_LINKS: "Quick Links: ",
-            EDITS_LINK: "Edits",
+            EDITS_LINK: "Creative Image Edits",
             VIDEOS_LINK: "Videos",
             LANDSCAPES_LINK: "Landscapes",
-            HOBBIES_HEADER: "My hobbies: Analysis, Editing & More!",
+            HOBBIES_HEADER: "My hobbies: Analysis, Image Editing & More!",
             EDITS_INTRO_TEXT: "Whenever I watch media, play it, make weird connections in my head or I get inspired I try my hand at creating good backgrounds and thumbnails or I make silly memes based off that media." +
                             "The former of which are usually for my own purposes whether it’s cuz I wanted my own custom background for my phone and tablet or to make an appealing image for a video I had planned.",
             EDITS_EXAMPLE_TEXT: "The later examples of memes I make are usually to emphasize something I encountered in my life and made a connection to another property as most memes tend to be." +
@@ -39,7 +39,7 @@ export const text_resources = {
             VIDEOS_LINK_TEXT_2: "contact page",
             VIDEOS_LINK_TEXT_3: " to find my channel!",
             VIDEOS_ECHOES_TEXT: "One of my most recent & personal favorite analysis videos! Strap in though, it's a long one!",
-            VIDEOS_MEME_TEXT: "I thought this moment in Fire Emblem Binding Blade was funny!",
+            VIDEOS_MEME_TEXT: "I abridged the bad karma ending of inFAMOUS: Second Son a little here.",
             LANDSCAPES_OVERVIEW_TEXT: "When I go biking for a while or just explore around my neighborhood outside, I tend to encounter a lot of beautiful scenery and landscapes that compels me to try and capture in photo form." +
                                     "I’m not entirely sure why I like doing this so much, I guess it just happens on instinct for me." +
                                     "Either way I’ve seen a lot over the years and I thought I’d show some particular highlights here!",
