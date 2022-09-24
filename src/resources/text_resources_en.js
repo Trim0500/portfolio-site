@@ -39,7 +39,7 @@ export const text_resources = {
             VIDEOS_LINK_TEXT_2: "contact page",
             VIDEOS_LINK_TEXT_3: " to find my channel!",
             VIDEOS_ECHOES_TEXT: "One of my most recent & personal favorite analysis videos! Strap in though, it's a long one!",
-            VIDEOS_MEME_TEXT: "I thought this moment in Fire Emblem Binding Blade was funny!",
+            VIDEOS_MEME_TEXT: "I abridged the bad karma ending of inFAMOUS: Second Son a little here.",
             LANDSCAPES_OVERVIEW_TEXT: "When I go biking for a while or just explore around my neighborhood outside, I tend to encounter a lot of beautiful scenery and landscapes that compels me to try and capture in photo form." +
                                     "I’m not entirely sure why I like doing this so much, I guess it just happens on instinct for me." +
                                     "Either way I’ve seen a lot over the years and I thought I’d show some particular highlights here!",

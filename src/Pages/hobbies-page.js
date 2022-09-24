@@ -120,7 +120,7 @@ export default class HobbiesPage extends React.Component {
                             </div>
                             <p style={{textAlign: "center"}}>{_text.HOBBIES.VIDEOS_ECHOES_TEXT}</p>
                             <div className='video-container'>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ak2lV5cVdP8?&amp;start=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/o6PvyBwrIeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <p style={{textAlign: "center"}}>{_text.HOBBIES.VIDEOS_MEME_TEXT}</p>
                         </Col>
