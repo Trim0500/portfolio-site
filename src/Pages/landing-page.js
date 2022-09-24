@@ -82,7 +82,7 @@ export default class Homepage extends React.Component {
                                 <Col>
                                     <img style={{maxWidth: '200px'}} name="Academics_Img" src={this.state.School_Logo} alt="Academics Thumbnail" width="200px" height="200px" className='landing-imgs' />
                                     <div className='center'>
-                                        <a className="a-pdf-download" name="Academics_Link" href='/academics'>{_text.HOME.HOME_ACADEMICS_TEXT}</a>
+                                        <a className="a-pdf-download" name="Academics_Link" href='/professional'>{_text.HOME.HOME_ACADEMICS_TEXT}</a>
                                     </div>
                                 </Col>
                                 <Col>
