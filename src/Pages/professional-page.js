@@ -20,8 +20,8 @@ export default class ProfessionalPage extends React.Component {
                             <h1>{_text.PROFESSIONAL.MSU_CERT_HEADING}</h1>
                             <Container>
                                 <p>{_text.PROFESSIONAL.MSU_CERT_OVERVIEW}</p>
-                                <p>{_text.PROFESSIONAL.MSU_CERT_LEARNING_1} <a className='p-contact-link' href='https://trim-ge2019.itch.io'>itch</a> {_text.PROFESSIONAL.MSU_CERT_LEARNING_2}</p>
-                                <p>{_text.PROFESSIONAL.MSU_CERT_CAPSTONE_1} <a className='p-contact-link' href='https://youtu.be/Y2fMzNPzsz0'>pitch</a> &amp; <a className="a-pdf-download" href="/Clifftop_Climb_High_Concept.pdf" download>high concept document</a> {_text.PROFESSIONAL.MSU_CERT_CAPSTONE_2}</p>
+                                <p>{_text.PROFESSIONAL.MSU_CERT_LEARNING_1} <a className='p-contact-link' href='https://trim-ge2019.itch.io'>{_text.PROFESSIONAL.MSU_CERT_ITCH}</a> {_text.PROFESSIONAL.MSU_CERT_LEARNING_2}</p>
+                                <p>{_text.PROFESSIONAL.MSU_CERT_CAPSTONE_1} <a className='p-contact-link' href='https://youtu.be/Y2fMzNPzsz0'>{_text.PROFESSIONAL.MSU_CERT_PITCH}</a> &amp; <a className="a-pdf-download" href="/Clifftop_Climb_High_Concept.pdf" download>{_text.PROFESSIONAL.MSU_CERT_HIGH_CONCEPT}</a> {_text.PROFESSIONAL.MSU_CERT_CAPSTONE_2}</p>
                             </Container>
 
                             <h1>{_text.PROFESSIONAL.INTERNSHIP_HEADING}</h1>

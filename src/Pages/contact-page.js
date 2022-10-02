@@ -18,7 +18,8 @@ export default class ContactPage extends React.Component {
             YouTube: null,
             Twitter: null,
             LinkedIn: null,
-            GitHub: null
+            GitHub: null,
+            Itch: null
         }
         this.form = React.createRef();
         this.recaptchaRef = React.createRef();
@@ -235,6 +236,12 @@ export default class ContactPage extends React.Component {
                                 <Col>
                                     <img name="linkedin_img" src={this.state.LinkedIn} alt="LinkedIn Logo" className='contact-imgs' width="200px" height="200px" />
                                     <p style={{textAlign: 'center'}}>{_text.CONTACT.CONTACT_LINKEDIN_TEXT_1}<a href='https://www.linkedin.com/in/tristanlafleur/' className='p-contact-link'>{_text.CONTACT.CONTACT_LINKEDIN_TEXT_2}</a></p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <img name="itch_img" src={this.state.Itch} alt="itch.io Logo" className='contact-imgs' width="200px" height="200px" />
+                                    <p style={{textAlign: 'center'}}>{_text.CONTACT.CONTACT_ITCH_TEXT_1}<a href='https://trim-ge2019.itch.io' className='p-contact-link'>{_text.CONTACT.CONTACT_ITCH_TEXT_2}</a></p>
                                 </Col>
                             </Row>
                         </Col>

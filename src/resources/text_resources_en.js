@@ -129,8 +129,11 @@ export const text_resources = {
                                 "the MDA Framework, immersing players in the game world, Risk-Reward, the designer’s role in a dev team and more! " + 
                                 "Above are some screenshots of the projects I made that I personally really enjoyed making, all available to play on " + 
                                 "my ",
+            MSU_CERT_ITCH: "itch",
             MSU_CERT_LEARNING_2: " page!",
             MSU_CERT_CAPSTONE_1: "You can also view the ",
+            MSU_CERT_PITCH: "pitch",
+            MSU_CERT_HIGH_CONCEPT: "high concept document",
             MSU_CERT_CAPSTONE_2: " for my capstone project here!"
         },
         CONTACT: {
@@ -149,7 +152,9 @@ export const text_resources = {
             CONTACT_GITHUB_TEXT_1: "View my ",
             CONTACT_GITHUB_TEXT_2: "work and projects!",
             CONTACT_LINKEDIN_TEXT_1: "This is my ",
-            CONTACT_LINKEDIN_TEXT_2: "work experience!"
+            CONTACT_LINKEDIN_TEXT_2: "work experience!",
+            CONTACT_ITCH_TEXT_1: "Here are my ",
+            CONTACT_ITCH_TEXT_2: " games!"
         }
     },
     fr: {
