@@ -118,7 +118,20 @@ export const text_resources = {
             INTERNSHIP_UNIQUE: "A unique aspect of the company was the inclusion of a Customer Relations team to give end users training on the products and take in support calls. " +
                                 "This added a more human element to the company through an open phone line whereby I would occasionally have to quickly diagnose a problem and determine if a code fix was needed. " +
                                 "It was a unique challenge as it put pressure on balancing tickets and communicating with the teams.",
-            INTERNSHIP_CONCLUSION: "Overall I feel as if I learned a great deal from the teams on code optimization, daily operations, communication in teams and multi-tasking tickets that I’ve already incorporated into my own personal work and projects!"
+            INTERNSHIP_CONCLUSION: "Overall I feel as if I learned a great deal from the teams on code optimization, daily operations, communication in teams and multi-tasking tickets that I’ve already incorporated into my own personal work and projects!",
+            MSU_CERT_HEADING: "Game Design & Development w/Unity MSU Specialization",
+            MSU_CERT_OVERVIEW: "Over the course of my internship @ NexOne in 2022 I took to the Coursera online learning platform to begin " + 
+                            "my first steps towards a career as a Game Designer! I took the online course offered by Michigan State University " + 
+                            "which was broken off into 5 parts: 2D Shooter & Platformer, 3D Shooter & Platformer and finally the Capstone Project. " + 
+                            "By taking this specialization, I developed 5 First Playable projects, including 1 from scratch, as well as a tech demo " + 
+                            "in Unity!",
+            MSU_CERT_LEARNING_1: "Through these courses I have developed a great understanding of game design concepts like feedback loops, " + 
+                                "the MDA Framework, immersing players in the game world, Risk-Reward, the designer’s role in a dev team and more! " + 
+                                "Above are some screenshots of the projects I made that I personally really enjoyed making, all available to play on " + 
+                                "my ",
+            MSU_CERT_LEARNING_2: " page!",
+            MSU_CERT_CAPSTONE_1: "You can also view the ",
+            MSU_CERT_CAPSTONE_2: " for my capstone project here!"
         },
         CONTACT: {
             CONTACT_HEADER: "Let's Get in Touch!",
