@@ -166,6 +166,12 @@ iframe {
     width: 100%;
     height: auto;
 }
+.professional-imgs {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
 .contact-imgs {
     display: block;
     margin: 0.5em auto 0.5em auto;
