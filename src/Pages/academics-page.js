@@ -31,11 +31,12 @@ export default class AcademicsPage extends React.Component {
         })
 
         client.query([
+            q.Get(q.Ref(q.Collection('portfolio_images'), '347305855342871119')),
             q.Get(q.Ref(q.Collection('portfolio_images'), '321792128831193679')),
             q.Get(q.Ref(q.Collection('portfolio_images'), '323060486570508879')),
             q.Get(q.Ref(q.Collection('portfolio_images'), '323061103356543567')),
             q.Get(q.Ref(q.Collection('portfolio_images'), '323060819292062287')),
-            q.Get(q.Ref(q.Collection('portfolio_images'), '323061495976952399')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323061495976952399'))
         ])
         .then((data) => this.HandleImages(data))
         .catch((err) => console.error(err))
@@ -110,7 +111,7 @@ export default class AcademicsPage extends React.Component {
                         <p>{_text.ACADEMICS.QUICK_LINKS}<a className='a-pdf-download' href='#Overview_Header'>{_text.ACADEMICS.OVERVIEW_LINK}</a> <a className='a-pdf-download' href='#projectsHeader'>{_text.ACADEMICS.NOTABLE_PROJECTS_LINK}</a> <a className='a-pdf-download' href='#Student_Life_Header'>{_text.ACADEMICS.STUDENT_LIFE_LINK}</a></p>
                     </span>
                     <h1 id='Academics_Header' style={{paddingBottom: "0.5em", paddingTop: "0.5em"}}>{_text.ACADEMICS.ACADEMICS_HEADER}</h1>
-                    <Row>
+                    <Row className='academics-row-margin'>
                         <Col>
                             <Container>
                                 <Row>
@@ -125,7 +126,7 @@ export default class AcademicsPage extends React.Component {
                             </Container>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className='academics-row-margin'>
                         <Col>
                             <Container>
                                 <Row>
@@ -140,7 +141,7 @@ export default class AcademicsPage extends React.Component {
                             </Container>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className='academics-row-margin'>
                         <Col>
                             <Container>
                                 <h4 style={{textAlign: 'center'}} id='projectsHeader' onClick={this.showProjectsHeaders}>{_text.ACADEMICS.NOTABLE_PROJECTS_HEADER}</h4>
@@ -220,7 +221,7 @@ export default class AcademicsPage extends React.Component {
                             </Container>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className='academics-row-margin'>
                         <Col>
                             <h3 id='Student_Life_Header'>{_text.ACADEMICS.STUDENT_LIFE_HEADER}</h3>
                             <Container>

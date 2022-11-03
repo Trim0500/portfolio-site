@@ -31,7 +31,8 @@ export default class Homepage extends React.Component {
         client.query([
             q.Get(q.Ref(q.Collection('portfolio_images'), '321530096090350159')),
             q.Get(q.Ref(q.Collection('portfolio_images'), '321791953526063695')),
-            q.Get(q.Ref(q.Collection('portfolio_images'), '321792680777482831')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '347305771471471183')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321792680777482831'))
         ])
         .then((data) => this.HandleImages(data))
         .catch((err) => console.error(err))
