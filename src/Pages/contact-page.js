@@ -46,7 +46,8 @@ export default class ContactPage extends React.Component {
             q.Get(q.Ref(q.Collection('portfolio_images'), '323215794019238479')),
             q.Get(q.Ref(q.Collection('portfolio_images'), '323215820339544655')),
             q.Get(q.Ref(q.Collection('portfolio_images'), '323215865016222287')),
-            q.Get(q.Ref(q.Collection('portfolio_images'), '323215886751105615'))
+            q.Get(q.Ref(q.Collection('portfolio_images'), '323215886751105615')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '347358173260153425'))
         ])
         .then((data) => this.HandleImages(data))
         .catch((err) => console.error(err))
