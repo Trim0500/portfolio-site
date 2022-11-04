@@ -9,9 +9,10 @@ export const text_resources = {
         },
         HOME: {
             HOME_HEADER: "Welcome to Trim's Space!",
-            HOME_OVERVIEW: "Hello and welcome to the personal website of one Tristan Lafleur! I'm a software developer who likes to primarily code for backend services in Java & C#.",
+            HOME_OVERVIEW: "Hello and welcome to the personal website of one Tristan Lafleur! Part-time Full Stack .NET Developer, full-time student majoring in Data Science!",
+            HOME_OVERVIEW_GOALS: "My motto is work hard, play hard and stay honest to youself. I aim to aquire more advanced knowledge in the software development space to create robust, durable products that I can look back on and be proud of!",
             HOME_HOBBIES_TEXT: "Let me Tell you About What I Like!",
-            HOME_ACADEMICS_TEXT: "Check Out What I've Learned!",
+            HOME_PROFESSIONAL_TEXT: "Have a look @ my experiences!",
             HOME_CONTACT_TEXT: "Let's Get in Touch!"
         },
         HOBBIES: {
@@ -56,6 +57,11 @@ export const text_resources = {
             NOTABLE_PROJECTS_LINK: "Notable Projects",
             STUDENT_LIFE_LINK: "Student Life",
             ACADEMICS_HEADER: "My Academics",
+            ACADEMICS_OVERVIEW_CONCO: "Overview of Data Science @ Concordia",
+            OVERVIEW_TEXT_CONCO: "Currently I have enrolled in Concordia Univeristy's Data Science program. I am persuing a degree in " +
+                                "Computer Science Majoring in Data Science combining hard math and computational technology to, as the university " +
+                                "puts it, \"Crunch numbers to the nth degree — and see what happens.\" Throughout this program I will practice mathematical " +
+                                "theory, develop stronger knowledge of database design, further understand the nature of programming languages and more!",
             ACADEMICS_OVERVIEW: "Overview of Comp Sci @ Champlain",
             OVERVIEW_TEXT: "The highest level of education I have achieved thus far is a technical degree of collegial studies at Champlain College St. Lambert in Longueil Quebec." +
                         "It lasted about 3 years and covered a wide array of topics and fields in computer science." +
@@ -112,7 +118,23 @@ export const text_resources = {
             INTERNSHIP_UNIQUE: "A unique aspect of the company was the inclusion of a Customer Relations team to give end users training on the products and take in support calls. " +
                                 "This added a more human element to the company through an open phone line whereby I would occasionally have to quickly diagnose a problem and determine if a code fix was needed. " +
                                 "It was a unique challenge as it put pressure on balancing tickets and communicating with the teams.",
-            INTERNSHIP_CONCLUSION: "Overall I feel as if I learned a great deal from the teams on code optimization, daily operations, communication in teams and multi-tasking tickets that I’ve already incorporated into my own personal work and projects!"
+            INTERNSHIP_CONCLUSION: "Overall I feel as if I learned a great deal from the teams on code optimization, daily operations, communication in teams and multi-tasking tickets that I’ve already incorporated into my own personal work and projects!",
+            MSU_CERT_HEADING: "Game Design & Development w/Unity MSU Specialization",
+            MSU_CERT_OVERVIEW: "Over the course of my internship @ NexOne in 2022 I took to the Coursera online learning platform to begin " + 
+                            "my first steps towards a career as a Game Designer! I took the online course offered by Michigan State University " + 
+                            "which was broken off into 5 parts: 2D Shooter & Platformer, 3D Shooter & Platformer and finally the Capstone Project. " + 
+                            "By taking this specialization, I developed 5 First Playable projects, including 1 from scratch, as well as a tech demo " + 
+                            "in Unity!",
+            MSU_CERT_LEARNING_1: "Through these courses I have developed a great understanding of game design concepts like feedback loops, " + 
+                                "the MDA Framework, immersing players in the game world, Risk-Reward, the designer’s role in a dev team and more! " + 
+                                "Above are some screenshots of the projects I made that I personally really enjoyed making, all available to play on " + 
+                                "my ",
+            MSU_CERT_ITCH: "itch",
+            MSU_CERT_LEARNING_2: " page!",
+            MSU_CERT_CAPSTONE_1: "You can also view the ",
+            MSU_CERT_PITCH: "pitch",
+            MSU_CERT_HIGH_CONCEPT: "high concept document",
+            MSU_CERT_CAPSTONE_2: " for my capstone project here!"
         },
         CONTACT: {
             CONTACT_HEADER: "Let's Get in Touch!",
@@ -130,7 +152,9 @@ export const text_resources = {
             CONTACT_GITHUB_TEXT_1: "View my ",
             CONTACT_GITHUB_TEXT_2: "work and projects!",
             CONTACT_LINKEDIN_TEXT_1: "This is my ",
-            CONTACT_LINKEDIN_TEXT_2: "work experience!"
+            CONTACT_LINKEDIN_TEXT_2: "work experience!",
+            CONTACT_ITCH_TEXT_1: "Here are my ",
+            CONTACT_ITCH_TEXT_2: " games!"
         }
     },
     fr: {

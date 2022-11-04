@@ -10,7 +10,7 @@ export default class Homepage extends React.Component {
             ImageList: [],
             Me: null,
             Echoes_Vid_Tumbnail: null,
-            School_Logo: null,
+            Work_C_Sharp_Tumb: null,
             Socials: null
         }
         this.HandleImages = this.HandleImages.bind(this);
@@ -31,8 +31,8 @@ export default class Homepage extends React.Component {
         client.query([
             q.Get(q.Ref(q.Collection('portfolio_images'), '321530096090350159')),
             q.Get(q.Ref(q.Collection('portfolio_images'), '321791953526063695')),
-            q.Get(q.Ref(q.Collection('portfolio_images'), '321792128831193679')),
-            q.Get(q.Ref(q.Collection('portfolio_images'), '321792680777482831')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '347305771471471183')),
+            q.Get(q.Ref(q.Collection('portfolio_images'), '321792680777482831'))
         ])
         .then((data) => this.HandleImages(data))
         .catch((err) => console.error(err))
@@ -71,6 +71,7 @@ export default class Homepage extends React.Component {
                         <Col sm={7} name="Header_Div">
                             <h1>{_text.HOME.HOME_HEADER}</h1>
                             <p>{_text.HOME.HOME_OVERVIEW}</p>
+                            <p>{_text.HOME.HOME_OVERVIEW_GOALS}</p>
                             <Row>
                                 <Col>
                                     <img style={{maxWidth: '266px'}} name="Hobbies_Img" src={this.state.Echoes_Vid_Tumbnail} alt="Hobbies Thumbnail" width="266px" height="200px" className='landing-imgs' />
@@ -79,9 +80,9 @@ export default class Homepage extends React.Component {
                                     </div>
                                 </Col>
                                 <Col>
-                                    <img style={{maxWidth: '200px'}} name="Academics_Img" src={this.state.School_Logo} alt="Academics Thumbnail" width="200px" height="200px" className='landing-imgs' />
+                                    <img style={{maxWidth: '200px'}} name="Academics_Img" src={this.state.Work_C_Sharp_Tumb} alt="Professional Thumbnail" width="200px" height="200px" className='landing-imgs' />
                                     <div className='center'>
-                                        <a className="a-pdf-download" name="Academics_Link" href='/academics'>{_text.HOME.HOME_ACADEMICS_TEXT}</a>
+                                        <a className="a-pdf-download" name="Academics_Link" href='/professional'>{_text.HOME.HOME_PROFESSIONAL_TEXT}</a>
                                     </div>
                                 </Col>
                                 <Col>
