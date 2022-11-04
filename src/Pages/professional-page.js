@@ -79,13 +79,13 @@ export default class ProfessionalPage extends React.Component {
                                 <p>{_text.PROFESSIONAL.MSU_CERT_LEARNING_1} <a className='p-contact-link' href='https://trim-ge2019.itch.io'>{_text.PROFESSIONAL.MSU_CERT_ITCH}</a> {_text.PROFESSIONAL.MSU_CERT_LEARNING_2}</p>
                                 <Row>
                                     <Col>
-                                        <img style={{maxWidth: '422px'}} className='professional-imgs' name="Astro_Ranger_Img" src={this.state.Astro_Ranger_Plat} alt="Astro Ranger 2D Platformer" width="422px" height="300px" />
+                                        <img style={{maxWidth: '406px'}} className='professional-imgs' name="Astro_Ranger_Img" src={this.state.Astro_Ranger_Plat} alt="Astro Ranger 2D Platformer" width="406px" />
                                     </Col>
                                     <Col>
-                                        <img style={{maxWidth: '422px'}} className='professional-imgs' name="Mutant_Pest_Control_Img" src={this.state.Mutant_Pest_Control} alt="Mutant pest Control 3D Shooter" width="422px" height="300px" />
+                                        <img style={{maxWidth: '406px'}} className='professional-imgs' name="Mutant_Pest_Control_Img" src={this.state.Mutant_Pest_Control} alt="Mutant pest Control 3D Shooter" width="406px" />
                                     </Col>
                                     <Col>
-                                        <img style={{maxWidth: '422px'}} className='professional-imgs' name="Clifftop_Climb_Img" src={this.state.Clifftop_Climb} alt="Clifftop Climb Capstone Project" width="422px" height="300px" />
+                                        <img style={{maxWidth: '406px'}} className='professional-imgs' name="Clifftop_Climb_Img" src={this.state.Clifftop_Climb} alt="Clifftop Climb Capstone Project" width="406px" />
                                     </Col>
                                 </Row>
                                 <p>{_text.PROFESSIONAL.MSU_CERT_CAPSTONE_1} <a className='p-contact-link' href='https://youtu.be/Y2fMzNPzsz0'>{_text.PROFESSIONAL.MSU_CERT_PITCH}</a> &amp; <a className="a-pdf-download" href="/Clifftop_Climb_High_Concept.pdf" download>{_text.PROFESSIONAL.MSU_CERT_HIGH_CONCEPT}</a> {_text.PROFESSIONAL.MSU_CERT_CAPSTONE_2}</p>
@@ -96,13 +96,13 @@ export default class ProfessionalPage extends React.Component {
                                 <p>{_text.PROFESSIONAL.INTERNSHIP_OVERVIEW}</p>
                                 <Row>
                                     <Col>
-                                        <img style={{maxWidth: '422px'}} className='professional-imgs' name="NOA_Login_Img" src={this.state.NOA_Login} alt="NexOne Agent Login" width="422px" height="300px" />
+                                        <img style={{maxWidth: '406px'}} className='professional-imgs' name="NOA_Login_Img" src={this.state.NOA_Login} alt="NexOne Agent Login" width="406px" />
                                     </Col>
                                     <Col>
-                                        <img style={{maxWidth: '422px'}} className='professional-imgs' name="NOA_Sign_Img" src={this.state.NOA_Sign} alt="NexOne Agent Signing" width="422px" height="300px" />
+                                        <img style={{maxWidth: '406px'}} className='professional-imgs' name="NOA_Sign_Img" src={this.state.NOA_Sign} alt="NexOne Agent Signing" width="406px" />
                                     </Col>
                                     <Col>
-                                        <img style={{maxWidth: '422px'}} className='professional-imgs' name="NOA_Forms_Img" src={this.state.NOA_Forms} alt="NexOne Agent Forms" width="422px" height="300px" />
+                                        <img style={{maxWidth: '406px'}} className='professional-imgs' name="NOA_Forms_Img" src={this.state.NOA_Forms} alt="NexOne Agent Forms" width="406px" />
                                     </Col>
                                 </Row>
                                 <p>{_text.PROFESSIONAL.INTERNSHIP_LEARNING}</p>
