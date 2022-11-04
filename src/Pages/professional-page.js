@@ -98,14 +98,16 @@ export default class ProfessionalPage extends React.Component {
                                     <Col>
                                         <img style={{maxWidth: '406px'}} className='professional-imgs' name="NOA_Login_Img" src={this.state.NOA_Login} alt="NexOne Agent Login" width="406px" />
                                     </Col>
-                                    <Col>
-                                        <img style={{maxWidth: '406px'}} className='professional-imgs' name="NOA_Sign_Img" src={this.state.NOA_Sign} alt="NexOne Agent Signing" width="406px" />
-                                    </Col>
-                                    <Col>
-                                        <img style={{maxWidth: '406px'}} className='professional-imgs' name="NOA_Forms_Img" src={this.state.NOA_Forms} alt="NexOne Agent Forms" width="406px" />
-                                    </Col>
                                 </Row>
                                 <p>{_text.PROFESSIONAL.INTERNSHIP_LEARNING}</p>
+                                <Row>
+                                    <Col sm={5}>
+                                        <img style={{maxWidth: '406px'}} className='professional-imgs' name="NOA_Sign_Img" src={this.state.NOA_Sign} alt="NexOne Agent Signing" width="406px" />
+                                    </Col>
+                                    <Col sm={7}>
+                                        <img style={{maxWidth: '580px'}} className='professional-imgs' name="NOA_Forms_Img" src={this.state.NOA_Forms} alt="NexOne Agent Forms" width="580px" />
+                                    </Col>
+                                </Row>
                                 <p>{_text.PROFESSIONAL.INTERNSHIP_UNIQUE}</p>
                                 <p>{_text.PROFESSIONAL.INTERNSHIP_CONCLUSION}</p>
                             </Container>
